@@ -72,7 +72,6 @@ h6 {
  * LINK STYLE
  *------------------------------------------*/
 a {
-    color              : #FFD700;
     text-decoration    : none;
     -webkit-transition : all 0.3s ease 0s;
     -moz-transition    : all 0.3s ease 0s;
@@ -333,7 +332,7 @@ button:focus,
     }
 
 .header .content .social-icon li a:hover {
-    border-color : #ffffff;
+    border-color : #FFD700;
     }
 
 @media (max-width : 600px) {
@@ -461,7 +460,7 @@ button:focus,
  *-------------------*/
 
 .content-item {
-    margin-bottom : 40px;
+    margin-bottom : 0px;
     }
 
 .content-item h3 {
