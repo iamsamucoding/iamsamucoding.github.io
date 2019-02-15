@@ -24,6 +24,14 @@ body {
     background  : #ffffff;
     }
 
+.black-text, .black-text h3, .black-text span {
+    color: #333;
+}
+
+.white-text, .white-text h3, .white-text span {
+    color: #FFF;
+}
+
 /* --------------------------------------
  * Global Typography
  *------------------------------------------*/
@@ -367,6 +375,23 @@ button:focus,
 /*-------------------
  * Skills Progressbar
  *-------------------*/
+ .keywords {
+    background-color: #333;
+    color: #fff;
+    padding: 0px 6px 0px 6px;
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-family: Montserrat;
+    display: inline-block;
+ }
+
+.skill, .interest {
+    padding-bottom: 10px;
+}
+
+.skill h3, .interest h3 { 
+    margin-bottom: 0px;
+}
 
 .progress-item {
     position : relative;
@@ -440,18 +465,15 @@ button:focus,
 .portfolio-item .portfolio-info h3 {
     margin      : 0;
     line-height : 1;
-    color       : #ffffff;
     }
 
-.portfolio-item .portfolio-info small {
-    color : #ffffff;
-    }
+
 
 .portfolio-item:hover .portfolio-info {
     background : -webkit-linear-gradient(
             top,
             transparent 0%,
-            rgba(42, 84, 245, 0.5) 100%
+            rgba(255, 215, 0, 0.5) 100%
     );
     }
 
