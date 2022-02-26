@@ -1,0 +1,23 @@
+---
+---
+
+body {
+    color: #3d4144;
+}
+
+.card {
+    
+    // .card.bio
+    &.bio {
+        border: 0;
+    }
+
+    figure {
+        margin: 0;
+    }
+}
+
+.avatar {
+    max-width: 150px;
+    border-radius: 50%;
+}
