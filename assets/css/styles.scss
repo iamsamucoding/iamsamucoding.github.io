@@ -5,19 +5,43 @@ body {
     color: #3d4144;
 }
 
-.card {
-    
-    // .card.bio
-    &.bio {
-        border: 0;
-    }
+ul.no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+.bio {
+    border: 0;
 
     figure {
         margin: 0;
     }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .avatar {
+        max-width: 150px;
+        border-radius: 50%;
+    }
+
+    li {
+        margin-bottom: 0.5em;
+    }
 }
 
-.avatar {
-    max-width: 150px;
-    border-radius: 50%;
+
+.fa-twitter-square {
+    color: #55acee;
+}
+
+.fa-github, .fa-github-alt, .fa-github-square {
+    color: #171516;
+}
+
+.fa-youtube {
+    color: #ff0000;
 }
