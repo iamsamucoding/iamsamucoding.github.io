@@ -13,8 +13,8 @@ body {
 .navbar-brand, .navbar-nav {
     font-size: 1.3rem;
 
-    img {
-        max-height: 30px;
+    .logo {
+        max-height: 40px;
     }
 }
 
@@ -40,6 +40,10 @@ ul.no-bullets {
         text-decoration: none;
         color: inherit;
     }
+    
+    a:hover {
+        text-decoration: underline;
+    }
 
     .avatar {
         max-width: 150px;
@@ -50,6 +54,10 @@ ul.no-bullets {
 
     li {
         margin-bottom: 0.5em;
+    }
+
+    .label {
+        margin-left: 0.2em;
     }
 }
 
@@ -64,4 +72,21 @@ ul.no-bullets {
 
 .fa-youtube {
     color: #ff0000;
+}
+
+.fa-rss, .fa-rss-square {
+    color: #fa9b39;
+}
+
+
+footer {
+    background-color: #f2f3f3;
+
+    .logo {
+        max-height: 32px;
+    }
+
+    .social-networks {
+        font-size: 24px;
+    }
 }
