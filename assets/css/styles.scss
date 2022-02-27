@@ -67,6 +67,10 @@ ul.no-bullets {
 }
 
 
+.fa-linkedin {
+    color: #0a66c2;
+}
+
 .fa-twitter-square {
     color: #55acee;
 }
@@ -83,6 +87,29 @@ ul.no-bullets {
     color: #fa9b39;
 }
 
+
+.section-heading {
+    font-weight: 700;
+}
+
+.subsection-heading {
+    font-weight: 700;
+    margin-top: 1.5rem !important;
+}
+
+
+.badge-list {
+    padding-left: 0;
+    list-style: none;
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
 
 footer {
     background-color: #f2f3f3;
