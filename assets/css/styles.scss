@@ -5,6 +5,24 @@ body {
     color: #3d4144;
 }
 
+.navbar {
+    padding: 1em;
+    border-bottom: 1px solid #f2f3f3;
+}
+
+.navbar-brand, .navbar-nav {
+    font-size: 1.3rem;
+
+    img {
+        max-height: 30px;
+    }
+}
+
+.site-title {
+    // color: #4d91de !important;
+    font-weight: bold;
+}
+
 ul.no-bullets {
     list-style-type: none; /* Remove bullets */
     padding: 0; /* Remove padding */
