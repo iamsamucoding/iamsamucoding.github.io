@@ -2,6 +2,7 @@
 ---
 
 body {
+    background-color: #f7f7f7;
     color: #3d4144;
     font-family: 'Hind', sans-serif;
 }
@@ -13,6 +14,8 @@ a {
 .navbar {
     padding: 1em;
     border-bottom: 1px solid #f2f3f3;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .navbar-brand, .navbar-nav {
@@ -34,8 +37,16 @@ ul.no-bullets {
     margin: 0; /* Remove margins */
 }
 
+.card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05), 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
 .bio {
-    border: 0;
+    // border: 0;
 
     figure {
         margin: 0;
@@ -122,3 +133,5 @@ footer {
         font-size: 24px;
     }
 }
+
+
