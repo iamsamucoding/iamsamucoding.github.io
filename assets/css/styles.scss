@@ -2,7 +2,17 @@
 ---
 
 $base-blue: #519DD9;
+$base-blue-hover: #005c89;
 
+.bg-main {
+    background-color: $base-blue;
+    color: #FFF !important;
+}
+
+.bg-hover {
+    background-color: $base-blue-hover;
+    color: #FFF;
+}
 
 body {
     // background-color: #f7f7f7;
@@ -20,7 +30,7 @@ a, a:visited {
 }
 
 a:hover {
-    color: #005c89;
+    color: $base-blue-hover;
 }
 
 .navbar {
@@ -96,7 +106,7 @@ ul.no-bullets {
     }
 
     .card-body {
-        padding: 1.5rem;
+        padding: 0 1.5rem;
     }
 }
 
@@ -156,6 +166,15 @@ ul.no-bullets {
     a {
         text-decoration: none;
     }
+}
+
+.badge-main {
+    @extend .bg-main;
+    text-decoration: none;
+}
+
+.badge-main:hover {
+    @extend .bg-hover;
 }
 
 footer {
