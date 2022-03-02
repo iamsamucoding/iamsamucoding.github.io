@@ -12,6 +12,7 @@ body {
     // font-family: Arial,Helvetica,"Helvetica Neue",sans-serif,Arial;
     font-size: 1.1em;
     font-family: lato-light, lato, sans-serif;
+    line-height: normal;
 }
 
 a, a:visited {
@@ -51,6 +52,10 @@ ul.no-bullets {
 .card {
     // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05), 0 0 1px rgba(0, 0, 0, 0.1);
     border: 0;
+}
+
+.card-title {
+    font-weight: 700;
 }
 
 .card-body {
