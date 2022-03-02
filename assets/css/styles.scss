@@ -1,14 +1,25 @@
 ---
 ---
 
+$base-blue: #519DD9;
+
+
 body {
-    background-color: #f7f7f7;
+    // background-color: #f7f7f7;
     color: #3d4144;
-    font-family: 'Hind', sans-serif;
+    // color: #292929;
+    // font-family: 'Hind', sans-serif;
+    // font-family: Arial,Helvetica,"Helvetica Neue",sans-serif,Arial;
+    font-size: 1.1em;
+    font-family: lato-light, lato, sans-serif;
 }
 
-a {
-    color: inherit;
+a, a:visited {
+    color: $base-blue;
+}
+
+a:hover {
+    color: #005c89;
 }
 
 .navbar {
@@ -38,7 +49,8 @@ ul.no-bullets {
 }
 
 .card {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05), 0 0 1px rgba(0, 0, 0, 0.1);
+    // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05), 0 0 1px rgba(0, 0, 0, 0.1);
+    border: 0;
 }
 
 .card-body {
@@ -98,7 +110,6 @@ ul.no-bullets {
     color: #fa9b39;
 }
 
-
 .section-heading {
     font-weight: 700;
 }
@@ -106,6 +117,18 @@ ul.no-bullets {
 .subsection-heading {
     font-weight: 700;
     margin-top: 1.5rem !important;
+}
+
+
+.float-figure {
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+
+    @media (min-width: 768px) {
+        width: 40%;
+        margin-left: 0.7em;
+    }
 }
 
 
