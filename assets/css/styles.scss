@@ -38,6 +38,11 @@ a:hover {
     }
 }
 
+.nav-link.active {
+    font-weight: 600;
+    color: #3d4144 !important;
+}
+
 .site-title {
     // color: #4d91de !important;
     font-weight: bold;
