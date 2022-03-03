@@ -189,4 +189,88 @@ footer {
     }
 }
 
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+
+.timeline-item {
+    border-left: 1px solid #e5e5e5;
+    position: relative;
+    padding: 1rem 1rem 1rem 1.5rem;
+    // padding: 2rem 1.5rem 0.5rem 2.5rem;
+    // font-size: .9rem;
+    margin-left: 3rem;
+    min-height: 5rem;
+    
+    @media (min-width: 992px) {
+        margin-left: 11rem;
+    }
+
+    .timeline-date {
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+
+        @media (min-width: 992px) {
+            position: absolute;
+            left: -11rem;
+            // width: 7.5rem;
+            text-align: right;
+        }
+        
+        .time {
+            @media (min-width: 992px) {
+                display: block;
+            }
+            color: #888;
+            font-size: 85%;
+            padding-left: 0.4rem;
+        }
+    }
+
+    .timeline-point {
+        background: $base-blue;
+        display: inline-block;
+        position: absolute;
+        left: -0.4rem;
+        border-radius: 50%;
+        width: 0.8rem;
+        height: 0.8rem;
+        margin-top: 0.5rem!important;
+    }
+
+    .timeline-title {
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    .timeline-title:before {
+        content: ' ';
+        background: $base-blue;
+        display: inline-block;
+        position: absolute;
+        left: -0.4rem;
+        border-radius: 50%;
+        width: 0.8rem;
+        height: 0.8rem;
+        margin-top: 0.5rem!important;
+    }
+
+    .timeline-subtitle {
+        font-style: italic;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        margin-top: 0.5rem;
+    }
+
+    ul {
+        padding-left: 1rem;
+    }
+}
+
+
+
 
