@@ -9,6 +9,10 @@ $base-blue-hover: #005c89;
     color: #FFF !important;
 }
 
+.color-main {
+    color: #519DD9;
+}
+
 .bg-hover {
     background-color: $base-blue-hover;
     color: #FFF;
@@ -268,6 +272,10 @@ footer {
 
     ul {
         padding-left: 1rem;
+    }
+
+    li {
+        margin-bottom: 0.5rem;
     }
 }
 
