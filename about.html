@@ -215,7 +215,84 @@ My <b>research interests</b> are:
 
 
 <h4 class="subsection-heading color-main mt-5">Selected Papers</h4>
-<p>aaaa aaa</p>
+<div class="paper-list-item" style="margin-top: 1.5em">
+    <ul style="list-style-type: none; padding-left: 0; margin: 0">
+        <li style="padding: 0 0 0.25em 0;"><b><a href="https://link.springer.com/chapter/10.1007%2F978-3-030-72379-8_8" rel="nofollow noopener noreferrer" target="_blank" style="color: #3d4144;">Combining Registration Errors and Supervoxel Classification for Unsupervised Brain Anomaly Detection</a></b></li>
+        <li style="padding: 0 0 0.25em 0;">Samuel B. Martins, Alexandre X. Falcão, Alexandru C. Telea</li>
+        <li style="padding: 0 0 0.25em 0;"><i>Biomedical Engineering Systems and Technologies</i>, Springer International Publishing, pp. 140–164, 2021.</li>
+    </ul>
+    <button type="button" class="btn bg-main" style="padding: 0.375rem 0.75rem; font-weight: 700;"><i class="fas fa-solid fa-scroll"></i> Abstract</button>
+    <a href="https://link.springer.com/chapter/10.1007%2F978-3-030-72379-8_8" class="btn bg-main active" role="button" aria-pressed="true" rel="nofollow noopener noreferrer" target="_blank" style="padding: 0.375rem 0.75rem; font-weight: 700;"><i class="fas fa-solid fa-book"></i> Published version</a>
+    <div class="card" style="margin-top: 0.25em; display: none;">
+        <div class="card-body" style="text-align: justify;">
+            Automatic detection of brain anomalies in MR images is challenging and complex due to intensity similarity between lesions and healthy tissues as well as the large variability in shape, size, and location among different anomalies. Even though discriminative models (supervised learning) are commonly used for this task, they require quite high-quality annotated training images, which are absent for most medical image analysis problems. Inspired by groupwise shape analysis, we adapt a recent fully unsupervised supervoxel-based approach (SAAD)—designed for abnormal asymmetry detection of the hemispheres—to detect brain anomalies from registration errors. Our method, called BADRESC, extracts supervoxels inside the right and left hemispheres, cerebellum, and brainstem, models registration errors for each supervoxel, and treats outliers as anomalies. Experimental results on MR-T1 brain images of stroke patients show that BADRESC outperforms a convolutional-autoencoder-based method and attains similar detection rates for hemispheric lesions in comparison to SAAD with substantially fewer false positives. It also presents promising detection scores for lesions in the cerebellum and brainstem.
+        </div>
+    </div>
+</div>
+
+<div class="paper-list-item" style="margin-top: 1.5em">
+    <ul style="list-style-type: none; padding-left: 0; margin: 0">
+        <li style="padding: 0 0 0.25em 0;"><b><a href="https://www.sciencedirect.com/science/article/abs/pii/S0895611120300720?via%3Dihub" rel="nofollow noopener noreferrer" target="_blank" style="color: #3d4144;">Investigating the impact of supervoxel segmentation for unsupervised abnormal brain asymmetry detection</a></b></li>
+        <li style="padding: 0 0 0.25em 0;">Samuel B. Martins, Alexandru C. Telea, Alexandre X. Falcão</li>
+        <li style="padding: 0 0 0.25em 0;"><i>Computerized Medical Imaging and Graphics</i>, vol. 85, pp. 101770, 2020.</li>
+    </ul>
+    <button type="button" class="btn bg-main" style="padding: 0.375rem 0.75rem; font-weight: 700;"><i class="fas fa-solid fa-scroll"></i> Abstract</button>
+    <a href="https://hal.archives-ouvertes.fr/hal-03143323" class="btn bg-main active" role="button" aria-pressed="true" rel="nofollow noopener noreferrer" target="_blank" style="padding: 0.375rem 0.75rem; font-weight: 700;"><i class="fas fa-solid fa-file-pdf"></i> Paper</a>
+    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0895611120300720?via%3Dihub" class="btn bg-main active" role="button" aria-pressed="true" rel="nofollow noopener noreferrer" target="_blank" style="padding: 0.375rem 0.75rem; font-weight: 700;"><i class="fas fa-solid fa-book"></i> Published version</a>
+    <div class="card" style="margin-top: 0.25em; display: none;">
+        <div class="card-body" style="text-align: justify;">
+            Several brain disorders are associated with abnormal brain asymmetries (asymmetric anomalies). Several computer-based methods aim to detect such anomalies automatically. Recent advances in this area use automatic unsupervised techniques that extract pairs of symmetric supervoxels in the hemispheres, model normal brain asymmetries for each pair from healthy subjects, and treat outliers as anomalies. Yet, there is no deep understanding of the impact of the supervoxel segmentation quality for abnormal asymmetry detection, especially for small anomalies, nor of the added value of using a specialized model for each supervoxel pair instead of a single global appearance model. We aim to answer these questions by a detailed evaluation of different scenarios for supervoxel segmentation and classification for detecting abnormal brain asymmetries. Experimental results on 3D MR-T1 brain images of stroke patients confirm the importance of high-quality supervoxels fit anomalies and the use of a specific classifier for each supervoxel. Next, we present a refinement of the detection method that reduces the number of false-positive supervoxels, thereby making the detection method easier to use for visual inspection and analysis of the found anomalies.
+        </div>
+    </div>
+</div>
+
+<div class="paper-list-item" style="margin-top: 1.5em">
+    <ul style="list-style-type: none; padding-left: 0; margin: 0">
+        <li style="padding: 0 0 0.25em 0;"><b><a href="https://pubmed.ncbi.nlm.nih.gov/31423590/" rel="nofollow noopener noreferrer" target="_blank" style="color: #3d4144;">An adaptive probabilistic atlas for anomalous brain segmentation in MR images</a></b></li>
+        <li style="padding: 0 0 0.25em 0;">Samuel B. Martins, Jordão Bragantini, Alexandre X. Falcão, Clarissa L. Yasuda</li>
+        <li style="padding: 0 0 0.25em 0;"><i>Medical Physics</i>, vol. 46, no. 11, pp. 4940–4950, 2019.</li>
+    </ul>
+    <button type="button" class="btn bg-main" style="padding: 0.375rem 0.75rem; font-weight: 700;"><i class="fas fa-solid fa-scroll"></i> Abstract</button>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31423590/" class="btn bg-main active" role="button" aria-pressed="true" rel="nofollow noopener noreferrer" target="_blank" style="padding: 0.375rem 0.75rem; font-weight: 700;"><i class="fas fa-solid fa-book"></i> Published version</a>
+    <div class="card" style="margin-top: 0.25em; display: none;">
+        <div class="card-body" style="text-align: justify;">
+            Automated segmentation of brain structures (objects) in MR three-dimensional (3D) images for quantitative analysis has been a challenge and probabilistic atlases (PAs) are among the most well-succeeded approaches. However, the existing models do not adapt to possible object anomalies due to the presence of a disease or a surgical procedure. Post-processing operation does not solve the problem, for example, tissue classification to detect and remove such anomalies inside the resulting segmentation mask, because segmentation errors on healthy tissues cannot be fixed. Such anomalies very often alter the shape and texture of the brain structures, making them different from the appearance of the model. In this paper, we present an effective and efficient adaptive probabilistic atlas, named AdaPro, to circumvent the problem and evaluate it on a challenging task - the segmentation of the left hemisphere, right hemisphere, and cerebellum, without pons and medulla, in 3D MR-T1 brain images of Epilepsy patients. This task is challenging due to temporal lobe resections, artifacts, and the absence of contrast in some parts between the structures of interest.
+        </div>
+    </div>
+</div>
+
+<div class="paper-list-item" style="margin-top: 1.5em">
+    <ul style="list-style-type: none; padding-left: 0; margin: 0">
+        <li style="padding: 0 0 0.25em 0;"><b><a href="https://pubmed.ncbi.nlm.nih.gov/31435950/" rel="nofollow noopener noreferrer" target="_blank" style="color: #3d4144;">Graph-Based Image Segmentation Using Dynamic Trees</a></b></li>
+        <li style="padding: 0 0 0.25em 0;">Jordão Bragantini, Samuel B. Martins, Cesar Castelo-Fernandez, Alexandre X. Falcão</li>
+        <li style="padding: 0 0 0.25em 0;"><i>Iberoamerican Congress on Pattern Recognition (CIARP)</i>, pp. 470–478, 2018.</li>
+    </ul>
+    <button type="button" class="btn bg-main" style="padding: 0.375rem 0.75rem; font-weight: 700;"><i class="fas fa-solid fa-scroll"></i> Abstract</button>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31435950/" class="btn bg-main active" role="button" aria-pressed="true" rel="nofollow noopener noreferrer" target="_blank" style="padding: 0.375rem 0.75rem; font-weight: 700;"><i class="fas fa-solid fa-book"></i> Published version</a>
+    <div class="card" style="margin-top: 0.25em; display: none;">
+        <div class="card-body" style="text-align: justify;">
+            Image segmentation methods have been actively investigated, being the graph-based approaches among the most popular for object delineation from seed nodes. In this context, one can design segmentation methods by distinct choices of the image graph and connectivity function—i.e., a function that measures how strongly connected are seed and node through a given path. The framework is known as Image Foresting Transform (IFT) and it can define by seed competition each object as one optimum-path forest rooted in its internal seeds. In this work, we extend the general IFT algorithm to extract object information as the trees evolve from the seed set and use that information to estimate arc weights, positively affecting the connectivity function, during segmentation. The new framework is named Dynamic IFT (DynIFT) and it can make object delineation more effective by exploiting color, texture, and shape information from those dynamic trees. In comparison with other graph-based approaches from the state-of-the-art, the experimental results on natural images show that DynIFT-based object delineation methods can be significantly more accurate.
+        </div>
+    </div>
+</div>
+
+<div class="paper-list-item" style="margin-top: 1.5em">
+    <ul style="list-style-type: none; padding-left: 0; margin: 0">
+        <li style="padding: 0 0 0.25em 0;"><b><a href="https://ieeexplore.ieee.org/abstract/document/8097313" rel="nofollow noopener noreferrer" target="_blank" style="color: #3d4144;">A Fast and Robust Negative Mining Approach for Enrollment in Face Recognition Systems</a></b></li>
+        <li style="padding: 0 0 0.25em 0;">Samuel B. Martins, Giovani Chiachia, Alexandre X. Falcão</li>
+        <li style="padding: 0 0 0.25em 0;"><i>Conference on Graphics, Patterns and Images (SIBGRAPI)</i>, pp. 201–208, 2017.</li>
+    </ul>
+    <button type="button" class="btn bg-main" style="padding: 0.375rem 0.75rem; font-weight: 700;"><i class="fas fa-solid fa-scroll"></i> Abstract</button>
+    <a href="http://sibgrapi.sid.inpe.br/archive.cgi/sid.inpe.br/sibgrapi/2017/08.16.18.22" class="btn bg-main active" role="button" aria-pressed="true" rel="nofollow noopener noreferrer" target="_blank" style="padding: 0.375rem 0.75rem; font-weight: 700;"><i class="fas fa-solid fa-file-pdf"></i> Paper</a>
+    <a href="https://ieeexplore.ieee.org/abstract/document/8097313" class="btn bg-main active" role="button" aria-pressed="true" rel="nofollow noopener noreferrer" target="_blank" style="padding: 0.375rem 0.75rem; font-weight: 700;"><i class="fas fa-solid fa-book"></i> Published version</a>
+    <div class="card" style="margin-top: 0.25em; display: none;">
+        <div class="card-body" style="text-align: justify;">
+            Consider a face image data set from clients of a company and the problem of building a face recognition system from it. Video cameras can be used to acquire several images per client in order to maximize the robustness of the system. However, as the data set grows huge, the accuracy of the system might be seriously compromised since the number of negative samples for each user is increasing. We propose here a first solution for this problem, which (i) limits the number of negative samples in the training set for preserving responsiveness during user enrollment, (ii) selects the most informative negative samples with respect to each user for preserving accuracy, and (iii) builds a user-specific classification model. We combine a high-dimensional data representation from deep learning with a method that selects negative samples from a large mining set and builds, within interactive times, effective user-specific training set and classifier, using linear support vector machines. The method can also be used with other feature extractors. It has shown superior performance as compared to five baseline methods on three unconstrained data sets.
+        </div>
+    </div>
+</div>
+
+
 
 
 <h4 class="subsection-heading color-main mt-5">Awards</h4>
