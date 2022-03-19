@@ -1,0 +1,28 @@
+<div id="experience">
+    <h4 class="subsection-heading color-main">Experience <i class="bi bi-building"></i></h4>
+    <div class="row">
+        <div class="col-sm-12">
+            <ul class="timeline">
+                {% for item in site.data.experience %}
+                    <li class="timeline-item"">
+                        <div class=" timeline-date">{{ item.date }} <span class="time"></span></div>
+                        <h5 class="timeline-title">{{ item.position }}</h5>
+                        <h6 class="timeline-subtitle">{{ item.company }}</h6>
+                        {% if item.assignments.size == 1 %}
+                            <p>{{ item.assignments[0] }}</p>
+                        {% else %}
+                            <ul>
+                                {% for assignment in item.assignments %}
+                                    <li>{{ assignment }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Based on: -->
+<!-- https://bootsnipp.com/snippets/xrKXW -->
+<!-- https://bootsnipp.com/snippets/4Mzzm -->
