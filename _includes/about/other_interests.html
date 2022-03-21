@@ -1,0 +1,20 @@
+<div id="other-interests" class="mt-5 about-item">
+    <h4 class="subsection-heading color-main">Other Interests <i class="fa-solid fa-icons"></i></h4>
+    <div class="row">
+        {% assign half_size = site.data.other_interests.size | plus: 1 | divided_by: 2 %}
+        <div class="col-sm-6">
+            <ul>
+            {% for item in site.data.other_interests limit:half_size %}
+                <li>{{ item.icon }} {{ item.interest }}</li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="col-sm-6">
+            <ul>
+            {% for item in site.data.other_interests offset:half_size %}
+                <li>{{ item.icon }} {{ item.interest }}</li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+- interest: Technology
+  icon: '<i class="bi bi-robot"></i>'
+- interest: Reading
+  icon: '<i class="fas fa-solid fa-book"></i>'
+- interest: Board games
+  icon: '<i class="fas fa-solid fa-chess-knight"></i>'
+- interest: Games
+  icon: '<i class="bi bi-controller"></i>'
+- interest: Piano, Guitar
+  icon: '<i class="bi bi-file-music"></i>'
+- interest: Soccer, Volleyball
+  icon: '<i class="fas fa-solid fa-futbol"></i>'
+- interest: Miniature painting, Toy makeover
+  icon: '<i class="bi bi-palette"></i>'
