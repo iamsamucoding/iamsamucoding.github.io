@@ -8,9 +8,11 @@
                 </a>
             </div>
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex social-networks">
-                <li><a href="https://twitter.com/hisamuka" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i></a></li>
-                <li><a href="https://github.com/hisamuka" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a></li>
-                <li><a href="https://github.com/hisamuka" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+                {% for item in site.social_networks %}
+                    {% if item.show_sidebar %}
+                        <li><a href="{{ item.link }}" rel="nofollow noopener noreferrer">{{ item.icon }}</a></li>
+                    {% endif %}
+                {% endfor %}
                 <li><a href="#" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i></a></li>
             </ul>
         </div>
