@@ -1,0 +1,17 @@
+<div id="expertise">
+    <h4 class="subsection-heading color-main">Expertise <i class="fa-solid fa-user-ninja"></i></h4>
+    <div class="row">
+    {% for item in site.data.expertise %}
+        <div class="expertise-item col-sm-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ item.title }} {{ item.icon }}</h5>
+                    {% for point in item.points %}
+                        <p class="card-text">{{ point }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>

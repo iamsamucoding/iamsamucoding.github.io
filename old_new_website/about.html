@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<h3 class="section-heading">About</h3>
+
+{% include about/intro.html %}
+{% include about/experience.html %}
+{% include about/education.html %}
+{% include about/expertise.html %}
+{% include about/skills.html %}
+{% include about/selected_papers.html %}
+{% include about/awards.html %}
+{% include about/registered_software.html %}
+{% include about/other_interests.html %}
+
+<!-- Footer -->
+<p class="mt-5">Feel free to <a href="mailto:{{ site.email }}">send me an e-mail</a> or get in touch on my social media by clicking the badges below to see my profile.</p>
+<ul class="badge-list">
+    {% for item in site.social_networks %}
+        <li><a href="{{ item.link }}" rel="nofollow noopener noreferrer" target="_blank"><img src='{{ item.badge }}' alt='{{ item.name }} badge'/></a></li>
+    {% endfor %}
+</ul>
