@@ -77,7 +77,13 @@ a:hover {
         background-position: right center;
     }
     
+    @media (max-width: 1199px) {
+        justify-content: flex-end !important;
+        padding-bottom: 2em;
+    }
+
     @media (min-width: 1200px) {
+        justify-content: center !important;
         padding-left: 320px;
     }
     
@@ -188,6 +194,11 @@ a:hover {
     top: 0;
     left: 0;
     right: 0;
+    
+    @media (max-width: 1199px) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%);
+    }
+
 }
 
 .hero-text {
