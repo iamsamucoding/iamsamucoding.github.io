@@ -93,7 +93,8 @@ a:hover {
         font-weight: bold;
         // line-height: 56px;
         // color: #45505b;
-        color: $text-color;
+        // color: $text-color;
+        color: white;
 
         @media (max-width: 992px) and (max-height: 1000px) {
             font-size: 1.8em;
@@ -103,7 +104,9 @@ a:hover {
     }
     
     p {
-        color: $text-color;
+        // color: $text-color;
+        color: white;
+
         // margin: 15px 0 0 0;
         margin: 0.3em 0 0 0;
         // font-size: 26px;
@@ -119,9 +122,14 @@ a:hover {
         }
 
         span {
+            border-bottom: 0.1em solid $base-blue;
             //   color: #0563bb;
-            color: $base-blue;
+            // color: $base-blue;
             // letter-spacing: 1px;
+        }
+
+        .typed-cursor {
+            border-bottom: none;
         }
     }
 
@@ -135,40 +143,44 @@ a:hover {
             // font-size: 24px;
             font-size: 1.4em;
             display: inline-block;
-            color: $text-color;
+            // color: $text-color;
+            color: white;
             line-height: 1;
             // margin-right: 20px;
             margin-right: 0.8em;
             transition: 0.3s;
         }
 
-        // a:hover {
-        //     //   color: #0563bb;
-        //     color: $base-blue;
+        a:hover {
+            //   color: #0563bb;
+            color: $base-blue;
+        }
+
+        // .fa-linkedin:hover {
+        //     color: #0a66c2;
         // }
 
-        .fa-linkedin:hover {
-            color: #0a66c2;
-        }
+        // .fa-twitter-square:hover {
+        //     color: #55acee;
+        // }
 
-        .fa-twitter-square:hover {
-            color: #55acee;
-        }
+        // .fa-github:hover, .fa-github-alt:hover, .fa-github-square:hover {
+        //     color: black;
+        // }
 
-        .fa-github:hover, .fa-github-alt:hover, .fa-github-square:hover {
-            color: black;
-        }
-
-        .fa-youtube:hover {
-            color: #ff0000;
-        }
+        // .fa-youtube:hover {
+        //     color: #ff0000;
+        // }
     }
 }
 
 
 #hero:before {
     content: "";
-    background: rgba(255, 255, 255, 0.8);
+    // background: rgba(255, 255, 255, 0.8);
+    // background: linear-gradient(90deg, rgba(9, 9, 9, 0.2) 0%, rgba(0, 0, 0, 0) 80.62%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 12%, rgba(0, 0, 0, 0) 70%);
+    
     position: absolute;
     bottom: 0;
     top: 0;
