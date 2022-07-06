@@ -1,22 +1,56 @@
-<div class="card bio">
-    <div class="card-body">
-        <center><figure>
-            <img class='avatar' src="/assets/images/bio-photo.png" alt="Bio photo">
-        </figure></center>
-        <h5 class="card-title">Samuel B. Martins (Samuka)</h5>
-        <p class="card-text">Professor, data scientist, YouTube creator, and boardgamer.</p>
+<!-- <header id="header">
+    <div class="card bio">
+        <div class="card-body">
+            <center><figure>
+                <img class='avatar' src="/assets/images/bio-photo.png" alt="Bio photo">
+            </figure></center>
+            <h5 class="card-title">Samuel B. Martins (Samuka)</h5>
+            <p class="card-text">Professor, data scientist, YouTube creator, and boardgamer.</p>
 
-        <div class="social-networks">
-            <ul class="list-unstyled">
-                <li><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i><span class="label">{{ site.location }}</span></li>
+            <div class="social-networks">
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i><span class="label">{{ site.location }}</span></li>
 
-                {% for item in site.social_networks %}
-                    {% if item.show_sidebar %}
-                        <li><a href="{{ item.link }}" rel="nofollow noopener noreferrer">{{ item.icon }}<span class="label">{{ item.name }}</span></a></li>
-                    {% endif %}
-                {% endfor %}
-                <li><a href="mailto:{{ site.email }}" rel="nofollow noopener noreferrer"><i class="bi bi-envelope-fill"></i><span class="label">E-mail</span></a></li>
-            </ul>
+                    {% for item in site.social_networks %}
+                        {% if item.show_sidebar %}
+                            <li><a href="{{ item.link }}" rel="nofollow noopener noreferrer">{{ item.icon }}<span class="label">{{ item.name }}</span></a></li>
+                        {% endif %}
+                    {% endfor %}
+                    <li><a href="mailto:{{ site.email }}" rel="nofollow noopener noreferrer"><i class="bi bi-envelope-fill"></i><span class="label">E-mail</span></a></li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
+</header> -->
+
+
+<header id="header">
+    <div class="d-flex flex-column">
+        <div class="profile"> <img src="/assets/images/bio-photo.png" alt="" class="img-fluid rounded-circle">
+            <h1 class="text-light"><a href="index.html">Alex Smith</a></h1>
+            <div class="social-links mt-3 text-center">
+                {% for item in site.social_networks %}
+                    {% if item.show_sidebar %}
+                        <a href="{{ item.link }}" rel="nofollow noopener noreferrer" class="{{ item.name }}">{{ item.icon }}</a>
+                    {% endif %}
+                {% endfor %}
+                <a href="mailto:{{ site.email }}" rel="nofollow noopener noreferrer"><i class="bi bi-envelope-fill"></i></a></li>
+            </div>
+        </div>
+        <nav id="navbar" class="nav-menu navbar">
+            <ul>
+                <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a>
+                </li>
+                <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+                <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a>
+                </li>
+                <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+                        <span>Portfolio</span></a></li>
+                <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a>
+                </li>
+                <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
