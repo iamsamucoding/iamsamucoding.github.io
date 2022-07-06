@@ -280,7 +280,7 @@ a:hover {
             }
             
             a:hover {
-              background: #149ddd;
+              background: $base-blue;
               color: #fff;
               text-decoration: none;
             }
@@ -356,7 +356,7 @@ a:hover {
     font-size: 1.3em;
     transition: all 0.4s;
     outline: none !important;
-    background-color: #149ddd;
+    background-color: $base-blue;
     color: #fff;
     // width: 40px;
     width: 2em;
