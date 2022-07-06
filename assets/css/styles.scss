@@ -43,6 +43,13 @@ a:hover {
 }
 
 
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+
+
 
 /****************/
 // HOME INTRO
@@ -53,8 +60,8 @@ a:hover {
     width: 100%;
     height: 100vh;
     background: url(../images/kinderdijk.jpg) right no-repeat;
-
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
 
     // galaxy
