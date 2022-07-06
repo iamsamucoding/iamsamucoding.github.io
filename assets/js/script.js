@@ -18,6 +18,21 @@ const select = (elem, all = false) => {
 }
 
 
+const on = (type, elem, listener, all = false) => {
+    let selectElem = select(elem, all)
+
+    if (selectElem) {
+        if (all) {
+            selectElem.forEach(e => e.addEventListener(type, listener))
+        } else {
+            selectElem.addEventListener(type, listener)
+        }
+    }
+}
+
+
+
+
 function getBaseName() {
     const index = window.location.href.lastIndexOf("/") + 1;
     const basenameWithExtension = window.location.href.slice(index);
@@ -36,6 +51,19 @@ function addActiveClassToNavbarItem() {
         element.classList.add("active");
     }
 }
+
+///////////////////////////
+// HEADER / MENU BUTTON
+///////////////////////////
+on('click', '.mobile-nav-toggle', function (e) {
+    select('body').classList.toggle('mobile-nav-active');
+    
+    this.classList.toggle('bi-list');
+    this.classList.toggle('bi-x');
+})
+
+
+
 
 ///////////////////////////
 // HERO SECTION

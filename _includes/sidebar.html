@@ -1,4 +1,12 @@
 <!-- Inspired on https://bootstrapmade.com/demo/templates/iPortfolio/ -->
+
+<!--
+Menu button. It is hidden when the screen is XL.
+There is a callback function associated to it (in /assets/js/script.js) when clicking on it.
+This callback function changes some styles defined on styles.scss to hide/show the side menu
+-->
+<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
 <header id="header">
     <div class="d-flex flex-column">
         <div class="profile">
@@ -14,7 +22,7 @@
                 <a href="mailto:{{ site.email }}" rel="nofollow noopener noreferrer"><i class="bi bi-envelope-fill"></i></a></li>
             </div>
         </div>
-        <nav id="navbar" class="nav-menu navbar">
+        <nav id="navbar" class="nav-menu navbar navbar-expand">
             <ul>
                 <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a>
                 </li>
@@ -31,3 +39,4 @@
         </nav>
     </div>
 </header>
+
