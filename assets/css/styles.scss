@@ -77,14 +77,16 @@ a:hover {
         background-position: right center;
     }
     
-    @media (min-width: 992px) {
-        padding-left: 160px;
+    @media (min-width: 1200px) {
+        padding-left: 320px;
     }
+    
     
     // ipad Air
     @media (max-width: 992px) and (max-height: 1000px) {
         text-align: center;
     }
+    
     
     h1 {
         margin: 0;
@@ -96,11 +98,11 @@ a:hover {
         // color: $text-color;
         color: white;
 
-        @media (max-width: 992px) and (max-height: 1000px) {
+        @media (max-width: 1200px) and (max-height: 1000px) {
             font-size: 1.8em;
             // font-size: 32px;
             // line-height: 36px;
-        }
+        }   
     }
     
     p {
@@ -186,6 +188,10 @@ a:hover {
     top: 0;
     left: 0;
     right: 0;
+}
+
+.hero-text {
+    position: relative;
 }
 
 
