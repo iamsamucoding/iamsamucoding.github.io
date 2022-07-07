@@ -182,7 +182,7 @@ h1.large, h1.large.large {
 
 
     // LINKS
-    .social-links {
+    .hero-social-links {
         // margin-top: 30px;
         margin-top: 1.5em;
 
@@ -251,6 +251,29 @@ h1.large, h1.large.large {
 //
 // Based on https://bootstrapmade.com/demo/templates/iPortfolio/
 /****************/
+.social-links a {
+    font-size: 1.1em;
+    display: inline-block;
+    background: #212431;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: $base-blue;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
 #header {
     position: fixed;
     top: 0;
@@ -298,30 +321,6 @@ h1.large, h1.large.large {
             a, a:hover {
                 color: #fff;
                 text-decoration: none;
-            }
-        }
-
-        .social-links {
-            a {
-                // font-size: 18px;
-                font-size: 1.1em;
-                display: inline-block;
-                background: #212431;
-                color: #fff;
-                line-height: 1;
-                padding: 8px 0;
-                margin-right: 4px;
-                border-radius: 50%;
-                text-align: center;
-                width: 36px;
-                height: 36px;
-                transition: 0.3s;
-            }
-            
-            a:hover {
-              background: $base-blue;
-              color: #fff;
-              text-decoration: none;
             }
         }
     }
@@ -482,14 +481,6 @@ ul.super-style {
 }
 
 
-
-// .field {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-around;
-//   width: 300px;
-// }
-
 .scroll {
   width: 60px;
   height: 60px;
@@ -579,8 +570,16 @@ ul.super-style {
 
 
 
+/****************/
+// FOOTER
+/****************/
+footer {
+    background-color: #f7f8f9;
 
-
+    .logo {
+        max-height: 40px;
+    }
+}
 
 
 
@@ -753,17 +752,7 @@ ul.no-bullets {
     @extend .bg-hover;
 }
 
-footer {
-    background-color: #f2f3f3;
 
-    .logo {
-        max-height: 32px;
-    }
-
-    .social-networks {
-        font-size: 24px;
-    }
-}
 
 .timeline {
     list-style: none;
