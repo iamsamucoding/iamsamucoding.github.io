@@ -42,6 +42,11 @@ a:hover {
     color: $base-blue-hover;
 }
 
+section {
+    // padding: 60px 0;
+    padding: 3em 0;
+    overflow: hidden;
+}
 
 main {
     height: 100vh;
@@ -50,10 +55,7 @@ main {
         margin-left: 17em;
     }
     
-    section {
-        padding: 60px 0;
-        overflow: hidden;
-    }
+    
 }
 
 
@@ -99,7 +101,7 @@ main {
 
     @media (min-width: 1200px) {
         justify-content: space-between !important;
-        padding-left: 320px;
+        padding-left: 17em;
     }
     
     
