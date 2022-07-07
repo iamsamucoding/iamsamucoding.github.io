@@ -388,7 +388,64 @@ section {
 }
 
 
+/****************/
+// SECTION
+/****************/
+.section-title {
+    padding-bottom: 1em;
+}
 
+
+.section-title {
+    h2 {
+        // font-size: 32px;
+        font-size: 1.8em;
+        font-weight: bold;
+        // padding-bottom: 20px;
+        padding-bottom: 0.6em;
+        position: relative;
+        // color: #173b6c;
+        // color: $base-blue;
+        color: $base-blue-hover;
+    }
+
+    h2::after {
+        content: "";
+        position: absolute;
+        display: block;
+        // width: 50px;
+        width: 1.6em;
+        height: 3px;
+        background: $base-blue;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+ul.super-style {
+    list-style: none;
+    padding: 0;
+
+    li {
+        // margin-bottom: 10px;
+        margin-bottom: 0.4em;
+    }
+
+    i {
+        // font-size: 16px;
+        font-size: 0.9em;
+        // margin-right: 5px;
+        color: $base-blue;
+        line-height: 0;
+    }
+}
 
 
 
