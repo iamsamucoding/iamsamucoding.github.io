@@ -53,9 +53,31 @@ main {
 
     @media (min-width: 992px) {
         margin-left: 17em;
+    }   
+}
+
+
+h1.large, h1.large.large {
+    @media (min-width: 1280px) {
+        font-size: 4.5rem;
+        line-height: 4.6875rem;
+        padding-top: 1px;
+        padding-bottom: 4px;
     }
-    
-    
+
+    @media (min-width: 768px) and (min-height: 620px), (min-width: 1280px) {
+        font-size: 3.875rem;
+        line-height: 4.0625rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 2.125rem;
+        line-height: 2.5rem;
+        padding-top: 2px;
+        padding-bottom: 3px;
+    }
 }
 
 
@@ -513,29 +535,44 @@ ul.super-style {
 }
 
 @keyframes down {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translateY(15px);
-  }
-  40% {
-    transform: translate(0);
-  }
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translateY(15px);
+    }
+    40% {
+        transform: translate(0);
+    }
 }
 
 @-webkit-keyframes down {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translateY(15px);
-  }
-  40% {
-    transform: translate(0);
-  }
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translateY(15px);
+    }
+    40% {
+        transform: translate(0);
+    }
 }
 
+
+/****************/
+// ABOUT
+//
+/****************/
+#lets-work {
+    a {
+        color: #0f141e;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
 
 
 
