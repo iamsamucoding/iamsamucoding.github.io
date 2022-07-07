@@ -5,11 +5,11 @@
         {% if item.important %}
             {% assign paper_idx = forloop.index %}
             <div class="paper-item mb-4">
-                <div class="row">
-                    <div class="col-sm-4 d-none d-sm-block ">
+                <div class="row mb-4">
+                    <div class="col-sm-12 col-md-4">
                         <a href="{{ item.link }}" rel="nofollow noopener noreferrer" target="_blank"><img src="{{ item.cover }}" style="width: 100%;"/></a>
                     </div>
-                    <div class="col-sm-8">
+                    <div class="col-sm-12 col-md-8">
                         <div class="card" style="border: 0">
                             <div class="card-body" style="padding: 0">
                                 <h5 class="card-title">{{ item.paper }}</h5>
