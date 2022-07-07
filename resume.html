@@ -2,5 +2,22 @@
 layout: main
 ---
 
+{% include section-begin.html id="resume" title="Resumé" %}
 
-aaa
+    {% include resume/intro.html %}
+    {% include resume/experience.html %}
+    {% include resume/education.html %}
+    {% include resume/expertise.html %}
+    {% include resume/skills.html %}
+    {% include resume/selected_papers.html %}
+    {% include resume/awards.html %}
+    {% include resume/registered_software.html %}
+    {% include resume/other_interests.html %}
+
+    <!-- Footer -->
+    <p class="mt-5">Feel free to <a href="mailto:{{ site.email }}">send me an e-mail</a> or get in touch on my social media by clicking the badges below to see my profile.</p>
+    {% include badge-list.html %}
+
+
+        
+{% include section-end.html %}
