@@ -85,12 +85,12 @@ section {
     }
     
     @media (max-width: 1199px) {
-        justify-content: flex-end !important;
+        // justify-content: flex-end !important;
         padding-bottom: 4em;
     }
 
     @media (min-width: 1200px) {
-        justify-content: center !important;
+        // justify-content: center !important;
         padding-left: 320px;
     }
     
@@ -461,12 +461,13 @@ ul.super-style {
 .scroll {
   width: 60px;
   height: 60px;
-  border: 2px solid #333;
+//   border: 2px solid #333;
+  border: 2px solid white;
   border-radius: 50%;
-  position: relative;
+//   position: relative;
 //   position: fixed;
-  bottom: 50px;
-  left: 50%;
+//   bottom: 50px;
+//   left: 50%;
 
   animation: down 1.5s infinite;
   -webkit-animation: down 1.5s infinite;
@@ -478,8 +479,10 @@ ul.super-style {
     left: 18px;
     width: 18px;
     height: 18px;
-    border-left: 2px solid #333;
-    border-bottom: 2px solid #333;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    // border-left: 2px solid #333;
+    // border-bottom: 2px solid #333;
     transform: rotate(-45deg);
   }
 }
