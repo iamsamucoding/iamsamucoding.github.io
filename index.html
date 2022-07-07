@@ -1,3 +1,15 @@
 ---
-layout: home
+layout: default
 ---
+
+
+{% include home/hero.html %}
+
+<main class="d-flex flex-column justify-content-between">
+    {{ content }}
+
+    {% include home/about.html %}
+
+    {% include footer.html %}
+</main>
+
