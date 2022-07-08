@@ -4,7 +4,7 @@
     {% for item in site.data.papers %}
         {% if item.important %}
             {% assign paper_idx = forloop.index %}
-            <div class="paper-item mb-4">
+            <div class="paper-item mb-5">
                 <div class="row mb-4">
                     <div class="col-sm-12 col-md-4">
                         <a href="{{ item.link }}" rel="nofollow noopener noreferrer" target="_blank"><img src="{{ item.cover }}" style="width: 100%;"/></a>

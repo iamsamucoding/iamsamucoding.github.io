@@ -32,7 +32,9 @@ const on = (type, elem, listener, all = false) => {
 
 
 
-
+///////////////////////////
+// HIGHLIGHT MENU LINK
+///////////////////////////
 function getBaseName() {
     const index = window.location.href.lastIndexOf("/") + 1;
     const basenameWithExtension = window.location.href.slice(index);
@@ -43,8 +45,13 @@ function getBaseName() {
 
 function addActiveClassToNavbarItem() {
     const basename = getBaseName();
-    const navbarId = "navbar-" + basename;
     
+    let navbarId = "navbar-" + basename;
+    
+    if ((basename == '') || (basename[0] == '#')) {
+        navbarId = "navbar-home";
+    }
+
     let element = document.getElementById(navbarId);
     
     if (element) {
@@ -86,10 +93,12 @@ if (typed) {
 }
 
 // TYPED CURSOR
-setInterval(() => {
-    const ele = select('.typed-cursor');
-    ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
-}, 500);  // 0.5 secs
+const typedCursor = select('.typed-cursor');
+if (typedCursor) {
+    setInterval(() => {
+        typedCursor.style.visibility = (typedCursor.style.visibility == 'hidden' ? '' : 'hidden');
+    }, 500);  // 0.5 secs
+}
 
 
 
