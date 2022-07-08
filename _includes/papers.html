@@ -16,14 +16,11 @@
                                 <h5 class="card-title">{{ item.paper }}</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">{{ item.authors }}</h6>
                                 <p class="card-text">{{ item.reference }}</p>
-                                <button type="button" class="btn bg-main"
-                                    style="padding: 0.3rem; font-size: 0.8rem; font-weight: 700;" data-bs-toggle="collapse"
+                                <button type="button" class="btn bg-main basic-button" data-bs-toggle="collapse"
                                     data-bs-target="#paper-{{paper_idx}}" aria-expanded="false"
                                     aria-controls="paper-{{paper_idx}}"><i class="fas fa-solid fa-scroll"></i> Abstract</button>
-                                <a href="{{ item.link }}" class="btn bg-main active" role="button" aria-pressed="true"
-                                    rel="nofollow noopener noreferrer" target="_blank"
-                                    style="padding: 0.3rem; font-size: 0.8rem; font-weight: 700;"><i
-                                        class="fas fa-solid fa-book"></i>
+                                <a href="{{ item.link }}" class="btn bg-main active basic-button" role="button" aria-pressed="true"
+                                    rel="nofollow noopener noreferrer" target="_blank"><i class="fas fa-solid fa-book"></i>
                                     Published version</a>
                                 <div class="collapse" id="paper-{{paper_idx}}">
                                     <div class="card" style="margin-top: 0.7em;">

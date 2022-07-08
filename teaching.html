@@ -26,10 +26,10 @@ layout: main
                 <div class="col-sm-12 col-md-8">
                     <p>{{ item.description }}</p>
                     {% if item.link %}
-                    <a href="{{ item.link }}" class="btn bg-main active" role="button" aria-pressed="true" rel="nofollow noopener noreferrer" target="_blank" style="padding: 0.3rem; font-size: 0.8rem; font-weight: 700;"><i class="fab fa-brands fa-youtube"></i> YouTube</a>
+                        <a href="{{ item.link }}" class="btn bg-main active basic-button" role="button" aria-pressed="true" rel="nofollow noopener noreferrer" target="_blank"><i class="fab fa-brands fa-youtube"></i> YouTube</a>
                     {% endif %}
                     {% if item.github %}
-                        <a href="{{ item.github }}" class="btn bg-main active" role="button" aria-pressed="true" rel="nofollow noopener noreferrer" target="_blank" style="padding: 0.3rem; font-size: 0.8rem; font-weight: 700;"><i class="fab fa-fw fa-github"></i> GitHub repo</a>                    
+                        <a href="{{ item.github }}" class="btn bg-main active basic-button" role="button" aria-pressed="true" rel="nofollow noopener noreferrer" target="_blank"><i class="fab fa-fw fa-github"></i> GitHub repo</a>                    
                     {% endif %}
                     </p>
                 </div>
