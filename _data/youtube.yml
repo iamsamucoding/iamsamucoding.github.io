@@ -1,0 +1,43 @@
+channelLink: https://www.youtube.com/c/xavecoding
+courses:
+  - title: 'Python Essencial para Data Science'
+    icon: 'fa-brands fa-python'
+    translation: 'Essential Python for Data Science'
+    tag: 'data science'
+    description: 'Course #1 in the Data Science training.<br/> Series of video lessons on the essentials of the python programming language for Data Science.'
+    embedLink: https://www.youtube.com/embed/videoseries?list=PL3ZslI15yo2qCEmnYOa2sq6VQOzQ2CFhj
+    link: https://www.youtube.com/playlist?list=PL3ZslI15yo2qCEmnYOa2sq6VQOzQ2CFhj
+    github: https://github.com/xavecoding/python-essencial-para-data-science
+  - title: 'Manipulação de Dados em Python com Pandas (Pandas Essencial)'
+    icon: 'bi bi-table'
+    translation: 'Data Manipulation in Python with Pandas (Essential Pandas)'
+    tag: 'data science'
+    description: 'Course #2 in the Data Science training.<br/> Course on data manipulation in Python using the Pandas library. The course covers basic library concepts and commands, data types, loading and saving, filtering, mapping functions, and joining tables.'
+    embedLink: https://www.youtube.com/embed/videoseries?list=PL3ZslI15yo2pfkf7EGNR14xTwe-wZ2bNX
+    link: https://www.youtube.com/playlist?list=PL3ZslI15yo2pfkf7EGNR14xTwe-wZ2bNX
+    github: https://github.com/xavecoding/pandas-essencial
+  - title: 'Introdução ao Spring Data'
+    icon: 'bx bx-data'
+    translation: 'Introduction to Spring Data'
+    tag: web development
+    description: 'Course #1 about modern web development with Java and Spring.<br/> This is an introductory course about the Spring Data, a Java framework inside the Spring ecosystem that provides a consistent data access layer for various data stores, right from relational to NoSQL databases.'
+    embedLink: https://www.youtube.com/embed/videoseries?list=PL3ZslI15yo2p5LMl-r7KtsVkC6hsucsJp
+    link: https://www.youtube.com/playlist?list=PL3ZslI15yo2p5LMl-r7KtsVkC6hsucsJp
+    github: https://github.com/xavecoding/tutorial_spring_data
+  - title: 'Introdução ao Spring MVC'
+    icon: 'bx bx-coffee'
+    translation: 'Introduction to Spring MVC'
+    tag: web development
+    description: 'Course #2 about modern web development with Java and Spring.<br/> This is an introductory course about the Spring MVC, a Java framework inside the Spring ecosystem used to build web applications. It follows the Model-View-Controller design pattern. It implements all the basic features of a core spring framework like Inversion of Control, Dependency Injection.'
+    embedLink: https://www.youtube.com/embed/videoseries?list=PL3ZslI15yo2ppY0GsRFDjRdHZAUuPnQ6M
+    link: https://www.youtube.com/playlist?list=PL3ZslI15yo2ppY0GsRFDjRdHZAUuPnQ6M
+    github: https://github.com/xavecoding/tutorial_spring_mvc
+  - title: 'Dominando Estruturas de Dados 1'
+    icon: 'bi bi-building'
+    translation: 'Mastering Data Structures #1'
+    tag: computing
+    description: 'Video lessons that covers several topics about Data Structures including: <ul><li>Pointers, Functions, and Structs</li><li>Static and Dynamic Allocation</li><li>Vectors and Matrices</li><li>Abstract Data Types</li><li>Compilation</li><li>Linked Lists and their Generalizations</li><li>Stacks and Queues</li></ul>'
+    embedLink: https://www.youtube.com/embed/videoseries?list=PL3ZslI15yo2r-gHJtjORRMRKMSNRpf7u5
+    link: https://www.youtube.com/playlist?list=PL3ZslI15yo2r-gHJtjORRMRKMSNRpf7u5
+    github: https://github.com/xavecoding/dominando-estruturas-de-dados-1
+

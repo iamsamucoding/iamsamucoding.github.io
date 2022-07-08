@@ -1,0 +1,42 @@
+---
+layout: main
+---
+
+{% include section-begin.html id="teaching" title="Teaching / YouTube" %}
+<p>I have been teaching courses in undergraduate and graduate courses since 2016.</p>
+<p>In parallel, I have been producing content (crash courses and tutorials) on <i>Machine Learning</i> and <i>Computing</i> for my <b>YouTube channel, <a href="{{ site.data.youtube.channelLink }}" rel="nofollow noopener noreferrer" target="_blank">XaveCoding</a></b>.<br/>The channel is dedicated to <i>Portuguese speakers</i> and already has <b>250+ videos</b> and <b>160k+ views</b>.</p>
+
+
+<div id="courses" class="mt-5">
+    {% for item in site.data.youtube.courses %}
+        <div class="course-item mb-5">
+            <div class="row">
+                <!-- <h3>Dominando Estruturas de Dados 1 (Mastering Data Structure)</h3> -->
+                <h4 class="subsection-heading color-main">{{ item.title }} <i class="{{ item.icon }}"></i></h4>
+                <h5 class="mb-4"><i>{{ item.translation }}</i> <span class="badge rounded-pill bg-{{ item.tag | replace: ' ', '-' }}">{{ item.tag }}</span></h5>
+
+                <div class="col-sm-12 col-md-4 mb-3">
+                    <div class="iframe-container">
+                        <iframe width="560" height="315" src="{{ item.embedLink }}"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <p>{{ item.description }}</p>
+                    {% if item.link %}
+                    <a href="{{ item.link }}" class="btn bg-main active" role="button" aria-pressed="true" rel="nofollow noopener noreferrer" target="_blank" style="padding: 0.3rem; font-size: 0.8rem; font-weight: 700;"><i class="fab fa-brands fa-youtube"></i> YouTube</a>
+                    {% endif %}
+                    {% if item.github %}
+                        <a href="{{ item.github }}" class="btn bg-main active" role="button" aria-pressed="true" rel="nofollow noopener noreferrer" target="_blank" style="padding: 0.3rem; font-size: 0.8rem; font-weight: 700;"><i class="fab fa-fw fa-github"></i> GitHub repo</a>                    
+                    {% endif %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+
+{% include section-end.html %}
