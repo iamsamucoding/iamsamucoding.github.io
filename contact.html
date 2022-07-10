@@ -1,0 +1,25 @@
+---
+layout: main
+---
+
+{% include section-begin.html id="contact" title="Contact" %}
+    <p class="mt-5">Feel free to contact me for questions, comments, partnerships or job opportunities. Use the form below.</p>
+    <p>Alternatively, shoot me an email at <b><a href="mailto:{{ site.email }}" rel="nofollow noopener noreferrer">{{ site.email }}</a></b>.</p>
+    <p>If you’ve got a more casual question, the best place to get in touch is on <b><a href="https://twitter.com/hisamuka" rel="nofollow noopener noreferrer" target="_blank">Twitter</a></b>.</p>
+
+
+<form action="https://getform.io/f/dee16072-1bed-45c8-8078-5b05067edc34" method="post">
+    <div class="row">
+        <div class="col-md-6 form-group"> <input type="text" name="name" class="form-control" id="name"
+                placeholder="Your Name" required=""></div>
+        <div class="col-md-6 form-group mt-3 mt-md-0"> <input type="email" class="form-control" name="email" id="email"
+                placeholder="Your Email" required=""></div>
+    </div>
+    <div class="form-group mt-3"> <input type="text" class="form-control" name="subject" id="subject"
+            placeholder="Subject" required=""></div>
+    <div class="form-group mt-3"><textarea class="form-control" name="message" rows="10" placeholder="Message"
+            required=""></textarea></div>
+    <div class="text-center mt-3"><button type="submit" class="btn btn-primary">Send Message</button></div>
+</form>
+{% include section-end.html %}
+
