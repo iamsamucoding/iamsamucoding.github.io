@@ -436,9 +436,9 @@ h1.large, h1.large.large {
 .section-title {
     padding-bottom: 1em;
     
-    h2 {
+    h1 {
         // font-size: 32px;
-        font-size: 1.8em;
+        // font-size: 1.8em;
         font-weight: bold;
         // padding-bottom: 20px;
         padding-bottom: 0.6em;
@@ -448,7 +448,7 @@ h1.large, h1.large.large {
         color: $base-blue-hover;
     }
 
-    h2::after {
+    h1::after {
         content: "";
         position: absolute;
         display: block;
