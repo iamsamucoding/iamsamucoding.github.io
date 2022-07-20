@@ -902,6 +902,62 @@ footer {
 }
 
 
+/****************/
+// POST
+/****************/
+.post {
+    padding-bottom: 1em;
+
+    header {
+        margin-bottom: 1.5em;
+    }
+    
+    &-title {
+        // font-size: 32px;
+        display: block;
+        margin: 0;
+        font-size: 1.8em;
+        font-weight: bold;
+        // padding-bottom: 20px;
+        // padding-bottom: 0.6em;
+        position: relative;
+        // color: #173b6c;
+        // color: $base-blue;
+        color: $base-blue-hover;
+    }
+    
+    &-subtitle {
+        display: block;
+        color: #738a94;
+        font-size: 1.2em;
+        padding-bottom: 0.25em;
+        // font-family: Georgia,serif;
+        // font-size: 2.3rem;
+    }
+    
+    &-meta {
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
+        color: #92a3ab;
+    
+        span::after {
+            content: "•";
+        }
+        
+        span:last-child::after  {
+            content: "";
+        }
+    }
+
+    &-tags {   
+        color: #92a3ab;
+
+        .tag-item {
+            margin-right: 0.3em;
+        }
+    }
+}
+
 
 
 
