@@ -5,7 +5,7 @@ layout: main
 <section class="post container">
     <div class="row">
         <header class="col-12">
-            <span class="post-title">{{ page.title }}</span>
+            <h1 class="post-title">{{ page.title }}</h1>
             <span class="post-subtitle">{{ page.subtitle }}</span>
             <p class="post-meta">
                 <span class="post-date">
@@ -30,17 +30,12 @@ layout: main
                 </p>
             {% endif %}
         </header>
-        <div class="post-cover d-flex justify-content-center mb-3">
-            <img src="{{ page.cover }}" />
+        <div class="post-cover d-flex justify-content-center mb-5">
+            <img alt='cover image' src="{{ page.cover }}" />
         </div>
 
-        <div class="section-content">
-
-
-    <!-- <h1>{{ page.title }}</h1>
-    <p>{{ page.date | date_to_string }} - {{ page.author }}</p> -->
-
-    {{ content }}
+        <div class="post-content">
+            {{ content }}
         </div>
     </div>
 </section>
