@@ -2,9 +2,9 @@
 layout: main
 ---
 
-<section class="post">
-    <div class="container">
-        <header>
+<section class="post container">
+    <div class="row">
+        <header class="col-12">
             <span class="post-title">{{ page.title }}</span>
             <span class="post-subtitle">{{ page.subtitle }}</span>
             <p class="post-meta">
@@ -30,6 +30,9 @@ layout: main
                 </p>
             {% endif %}
         </header>
+        <div class="post-cover d-flex justify-content-center mb-3">
+            <img src="{{ page.cover }}" />
+        </div>
 
         <div class="section-content">
 

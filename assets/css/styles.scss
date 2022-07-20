@@ -936,7 +936,7 @@ footer {
     }
     
     &-meta {
-        margin-top: 0.25em;
+        margin-top: 0.4em;
         margin-bottom: 0.25em;
         color: #92a3ab;
     
@@ -955,6 +955,12 @@ footer {
         .tag-item {
             margin-right: 0.3em;
         }
+    }
+
+    &-cover img {
+        width: 100%;
+        max-height: 324px;
+        object-fit: scale-down;
     }
 }
 
