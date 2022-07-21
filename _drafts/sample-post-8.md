@@ -5,7 +5,7 @@
 # the default layout is post.html
 # it was defined on _config.yml
 
-title: Sample post 4 (draft)
+title: Sample post 8 (draft)
 subtitle: Yeah yeah yeah yeah!
 # ideal resolution: 1296 x 324
 cover: https://random-ize.com/lorem-ipsum-generators/beer/suds3.jpg

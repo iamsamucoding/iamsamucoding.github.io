@@ -5,7 +5,7 @@
 # the default layout is post.html
 # it was defined on _config.yml
 
-title: Sample post 3 (draft)
+title: Sample post 7 (draft)
 subtitle: Uow, another sample post just to code the blog page layout!
 # ideal resolution: 1296 x 324
 cover: https://images.pexels.com/photos/6146173/pexels-photo-6146173.jpeg?auto=compress&cs=tinysrgb&w=1600
