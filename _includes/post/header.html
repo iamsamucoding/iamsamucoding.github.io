@@ -10,17 +10,17 @@
             <b>{{ page.author }}</b>
         </span>
         <span class="post-estimated-reading-time">
-            {% assign estimated_time = content | number_of_words | divided_by: 200.0 | round %}
-            {{ estimated_time }} min read
+            {% assign estimated_reading_time = content | number_of_words | divided_by: 200.0 | round %}
+            {{ estimated_reading_time }} min read
         </span>
     </p>
     {% if page.tags.size > 0 %}
-    <p class="post-tags">
-        <i class="fas fa-tags"></i>
+        <p class="post-tags">
+            <i class="fas fa-tags"></i>
 
-        {% for tag in page.tags %}
-        <span class="tag-item">{{ tag }}</span>
-        {% endfor %}
-    </p>
+            {% for tag in page.tags %}
+            <span class="tag-item">{{ tag }}</span>
+            {% endfor %}
+        </p>
     {% endif %}
 </header>

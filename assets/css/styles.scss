@@ -782,6 +782,18 @@ footer {
     }
 }
 
+.post-card {
+    border: 0 !important;
+
+    .card-title {
+        font-weight: bold;
+    }
+
+    .card-body {
+        padding: 1rem 0rem !important;
+    }
+}
+
 
 
 /****************/
