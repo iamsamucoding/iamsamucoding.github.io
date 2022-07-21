@@ -49,42 +49,8 @@
 
     <p align="center">Read more posts on the <a href="/blog" class="btn bg-main active basic-button" role="button" aria-pressed="true" rel="nofollow noopener noreferrer">blog →</a></p>
 
-
     {% for post in site.posts limit:6 %}
-        {% if post.thumbnail %}
-            {% assign thumbnail = post.thumbnail %}
-        {% elsif post.cover %}
-            {% assign thumbnail = post.cover %}
-        {% else %}
-            {% assign thumbnail = site.default_post_thumbnail %}
-        {% endif %}
-
-        {% assign estimated_reading_time = post.content | number_of_words | divided_by: 200.0 | round %}
-
-        <div class="col-sm-6 col-md-4 mb-3">
-            <div class="card post-card">
-                <img class="card-img-top" src="{{ thumbnail }}" alt="Post cover">
-                <div class="card-body">
-                    <h4 class="card-title mb-3">{{ post.title }}</h4>
-                    <h6 class="card-subtitle mb-2 text-muted">
-                        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i><time datetime="{{ post.date }}">{{ post.date | date_to_string }}<time> •
-                        {{ estimated_reading_time }} min read
-                    </h6>
-                    
-                    {% if post.tags.size > 0 %}
-                        <h6 class="text-muted">
-                            <i class="fas fa-tags"></i>
-                        
-                            {% for tag in post.tags %}
-                            <span class="tag-item">{{ tag }}</span>
-                            {% endfor %}
-                        </h6>
-                    {% endif %}
-                    <p class="card-text mt-3">{{ post.content | markdownify | strip_html | truncatewords: 20 }}</p>
-                    <a href="{{ post.url }}" class="stretched-link"></a>
-                </div>
-            </div>
-        </div>
+        {% include post/card.html post=post %}
     {% endfor %}
 
     <p align="center">Read more posts on the <a href="/blog" class="btn bg-main active basic-button" role="button" aria-pressed="true" rel="nofollow noopener noreferrer">blog →</a></p>

@@ -1,0 +1,36 @@
+
+{% if include.post.thumbnail %}
+    {% assign thumbnail = include.post.thumbnail %}
+{% elsif include.post.cover %}
+    {% assign thumbnail = include.post.cover %}
+{% else %}
+    {% assign thumbnail = site.default_post_thumbnail %}
+{% endif %}
+
+{% assign estimated_reading_time = include.post.content | number_of_words | divided_by: 200.0 | round %}
+
+<div class="col-sm-6 col-md-4 mb-3">
+    <div class="card post-card">
+        <img class="card-img-top" src="{{ thumbnail }}" alt="Post cover">
+        <div class="card-body">
+            <h4 class="card-title mb-3">{{ include.post.title }}</h4>
+            <h6 class="card-subtitle mb-2 text-muted">
+                <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i><time datetime="{{ include.post.date }}">{{
+                    include.post.date | date_to_string }}<time> •
+                        {{ estimated_reading_time }} min read
+            </h6>
+
+            {% if include.post.tags.size > 0 %}
+            <h6 class="text-muted">
+                <i class="fas fa-tags"></i>
+
+                {% for tag in include.post.tags %}
+                <span class="tag-item">{{ tag }}</span>
+                {% endfor %}
+            </h6>
+            {% endif %}
+            <p class="card-text mt-3">{{ include.post.content | markdownify | strip_html | truncatewords: 20 }}</p>
+            <a href="{{ include.post.url }}" class="stretched-link"></a>
+        </div>
+    </div>
+</div>
