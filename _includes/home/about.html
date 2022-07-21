@@ -47,6 +47,9 @@
 <div class="row mt-5 recent-posts">
     <h3 class="subsection-heading color-main mb-3">Recent Posts <i class="bi bi-file-earmark-text-fill"></i></h3>
 
+    <p align="center">Read more posts on the <a href="/blog" class="btn bg-main active basic-button" role="button" aria-pressed="true" rel="nofollow noopener noreferrer">blog →</a></p>
+
+
     {% for post in site.posts limit:6 %}
         {% if post.thumbnail %}
             {% assign thumbnail = post.thumbnail %}
@@ -83,6 +86,9 @@
             </div>
         </div>
     {% endfor %}
+
+    <p align="center">Read more posts on the <a href="/blog" class="btn bg-main active basic-button" role="button" aria-pressed="true" rel="nofollow noopener noreferrer">blog →</a></p>
+    <hr/>
 </div>
 
 
