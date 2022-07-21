@@ -101,6 +101,11 @@ if (typedCursor) {
 }
 
 
+// ADDING A DYNAMIC LINK BUTTON FOR ANY HEADING OF A POST PAGE
+const postHeadings = select(".post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6", all = true)
+for (const heading of postHeadings) {
+    heading.insertAdjacentHTML('beforeend', `<a href="#${heading.id}" rel="nofollow noopener noreferrer"><i class="bi bi-link-45deg"></i></a>`)
+}
 
 
 ///////////////////////////
