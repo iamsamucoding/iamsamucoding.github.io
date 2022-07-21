@@ -50,3 +50,15 @@ defaults:
     values:
       layout: "post"
       comments: true   # change to false to default to comments off site-wide
+
+
+# https://blog.webjeda.com/jekyll-pagination/#pagination-can-be-done-only-on-indexhtml
+plugins:
+  - jekyll-paginate
+
+pagination: 
+  enabled: true
+  offset: 1
+  
+paginate: 4
+paginate_path: "/blog/page:num/"
