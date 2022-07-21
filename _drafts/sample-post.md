@@ -1,8 +1,9 @@
 ---
-layout: post
-
 # run: jekyll serve -l --drafts
 # the drafts will be considered the lastest posts with the date of now
+
+# the default layout is post.html
+# it was defined on _config.yml
 
 title: A sample post (draft)
 subtitle: Creating an awesome template for my posts!
@@ -11,6 +12,9 @@ cover: /assets/images/standard_cover.png
 author: Samuel Martins
 tags: ['web', 'data science', 'machine learning']
 permalink: 
+
+# true by default
+comments: 
 ---
 
 Mussum Ipsum, cacilds vidis litro abertis.  Praesent malesuada urna nisi, quis volutpat erat hendrerit non.  Nam vulputate dapibus. Casamentiss faiz malandris se pirulitá. Detraxit consequat et quo num tendi nada. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet.  Sed non consequat odio. 

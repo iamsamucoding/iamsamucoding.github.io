@@ -36,3 +36,14 @@ social_networks:
   badge: https://img.shields.io/badge/-Google_Scholar-676767?style=flat&logo=google-scholar&logoColor=white&link=https://scholar.google.com.br/citations?user=f6Cc4nUAAAAJ&hl=en
   icon: ''
   show_sidebar: false
+disqus:
+  shortname: https-hisamuka-github-io
+  
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true   # change to false to default to comments off site-wide
