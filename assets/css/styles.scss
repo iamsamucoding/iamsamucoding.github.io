@@ -961,7 +961,8 @@ footer {
     &-cover img {
         width: 100%;
         max-height: 324px;
-        object-fit: scale-down;
+        // object-fit: scale-down;
+        object-fit: cover;
     }
 
     &-content {
