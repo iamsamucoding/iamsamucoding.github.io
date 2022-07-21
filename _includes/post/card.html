@@ -9,7 +9,7 @@
 
 {% assign estimated_reading_time = include.post.content | number_of_words | divided_by: 200.0 | round %}
 
-<div class="col-sm-6 col-md-4 mb-3">
+<div class="{{ include.cssClass }}">
     <div class="card post-card">
         <img class="card-img-top" src="{{ thumbnail }}" alt="Post cover">
         <div class="card-body">

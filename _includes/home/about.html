@@ -50,7 +50,7 @@
     <p align="center">Read more posts on the <a href="/blog" class="btn bg-main active basic-button" role="button" aria-pressed="true" rel="nofollow noopener noreferrer">blog →</a></p>
 
     {% for post in site.posts limit:6 %}
-        {% include post/card.html post=post %}
+        {% include post/card.html post=post cssClass="col-sm-6 col-md-4 mb-3" %}
     {% endfor %}
 
     <p align="center">Read more posts on the <a href="/blog" class="btn bg-main active basic-button" role="button" aria-pressed="true" rel="nofollow noopener noreferrer">blog →</a></p>

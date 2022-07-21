@@ -649,6 +649,22 @@ footer {
 
 
 /****************/
+// BLOG
+/****************/
+.horizontal-post-card {
+    img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .content {
+//        padding: 1rem 0rem !important;
+    }
+}
+
+
+/****************/
 // RESUMÉ
 /****************/
 .timeline {
