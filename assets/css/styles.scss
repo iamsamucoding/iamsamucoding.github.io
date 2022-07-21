@@ -916,7 +916,7 @@ footer {
         // font-size: 32px;
         display: block;
         margin: 0;
-        font-size: 1.8em;
+        // font-size: 1.8em;
         font-weight: bold;
         // padding-bottom: 20px;
         // padding-bottom: 0.6em;
@@ -928,7 +928,8 @@ footer {
     
     &-subtitle {
         display: block;
-        color: #738a94;
+        // color: #738a94;
+        color: $base-blue;
         font-size: 1.2em;
         padding-bottom: 0.25em;
         // font-family: Georgia,serif;
@@ -936,9 +937,9 @@ footer {
     }
     
     &-meta {
-        margin-top: 0.4em;
+        margin-top: 0.8em;
         margin-bottom: 0.25em;
-        color: #92a3ab;
+        // color: #92a3ab;
     
         span::after {
             content: "•";
@@ -950,7 +951,7 @@ footer {
     }
 
     &-tags {   
-        color: #92a3ab;
+        // color: #92a3ab;
 
         .tag-item {
             margin-right: 0.3em;
@@ -961,6 +962,29 @@ footer {
         width: 100%;
         max-height: 324px;
         object-fit: scale-down;
+    }
+
+    &-content {
+        figure {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+    
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+    
+            figcaption {
+                margin-top: 0.5em;
+                font-style: italic;
+            }
+        }
+
+        .twitter-tweet {
+            margin: 0 auto; 
+        }
     }
 }
 
