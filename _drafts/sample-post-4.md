@@ -9,6 +9,12 @@ title: The fourth sample post (draft)
 subtitle: Yeah yeah yeah yeah!
 # ideal resolution: 1296 x 324
 cover: https://random-ize.com/lorem-ipsum-generators/beer/suds3.jpg
+
+# Used on post listing. If not provided, the cover will be used.
+# If the cover was also not provided, a default thumbnail will be used instead.
+# ideal resolution: 414 x 200
+thumbnail:
+
 author: Samuel Martins
 tags: ['web', 'beer']
 permalink: 

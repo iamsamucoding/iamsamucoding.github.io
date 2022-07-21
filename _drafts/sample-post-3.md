@@ -9,6 +9,12 @@ title: The third sample post (draft)
 subtitle: Uow, another sample post just to code the blog page layout!
 # ideal resolution: 1296 x 324
 cover: https://images.pexels.com/photos/6146173/pexels-photo-6146173.jpeg?auto=compress&cs=tinysrgb&w=1600
+
+# Used on post listing. If not provided, the cover will be used.
+# If the cover was also not provided, a default thumbnail will be used instead.
+# ideal resolution: 414 x 200
+thumbnail:
+
 author: Samuel Martins
 tags: ['cats', 'data science', 'machine learning']
 permalink: 
