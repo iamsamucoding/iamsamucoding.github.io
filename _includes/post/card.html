@@ -1,10 +1,10 @@
 
+{% assign thumbnail = site.default_post_thumbnail %}
+
 {% if include.post.thumbnail %}
     {% assign thumbnail = include.post.thumbnail %}
 {% elsif include.post.cover %}
     {% assign thumbnail = include.post.cover %}
-{% else %}
-    {% assign thumbnail = site.default_post_thumbnail %}
 {% endif %}
 
 {% assign estimated_reading_time = include.post.content | number_of_words | divided_by: 200.0 | round %}
