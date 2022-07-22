@@ -1,6 +1,6 @@
 {% if paginator.total_pages > 1 %}
     <nav aria-label="pagination">
-        <ul class="pagination justify-content-center">
+        <ul class="pagination flex-wrap justify-content-center">
             {% assign previous_link_disabled_class = "disabled" %}
             
             {% if paginator.previous_page %}
