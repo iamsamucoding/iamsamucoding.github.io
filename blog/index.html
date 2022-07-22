@@ -5,18 +5,26 @@ layout: main
 {% include section-begin.html id="blog" title="Blog" %}
     <p>This blog aims to share a bit of my knowledge about technical subjects on machine learning, deep learning, and computing. Sometimes a technical deep dive or a soft skills piece. My posts may also include personal thoughts and reflections on life and career.</p>
     <p class="mb-5">Don't want to miss a thing? Follow me on <a href="{{ site.twitter }}" rel="nofollow noopener noreferrer" target="_blank">Twitter</a>.</p>
-
-
-    {% assign firstPost = paginator.posts | first %}
-    {% include post/horizontal_card.html post=firstPost %}
-
-    <div class="row mt-5 recent-posts">
-        {% for post in paginator.posts offset:1 %}
-            {% include post/card.html post=post cssClass="col-sm-6 col-md-4 mb-3" %}
-        {% endfor %}
+   
+    <div class="input-group mb-3">
+        <input type="text" id="post-search-input" class="form-control" placeholder="Filter posts" aria-label="Filter posts">
     </div>
+    
+    <div id="filtered-posts">
+    </div>
+    
+    <div id="posts">
+        {% assign firstPost = paginator.posts | first %}
+        {% include post/horizontal_card.html post=firstPost %}
 
-    {% include pagination.html %}
+        <div class="row mt-5 post-list">
+            {% for post in paginator.posts offset:1 %}
+                {% include post/card.html post=post cssClass="col-sm-6 col-md-4 mb-3" %}
+            {% endfor %}
+        </div>
+
+        {% include pagination.html %}
+    </div>
 
 
 {% include section-end.html %}
