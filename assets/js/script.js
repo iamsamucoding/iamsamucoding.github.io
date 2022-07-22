@@ -131,10 +131,13 @@ if (window.location.href.includes("/blog")) {
                 const key = event.target.value;
                 let postsDiv = document.getElementById("posts");
                 let filteredPostsDiv = document.getElementById("filtered-posts");
+                let postSearchResultsDiv = document.getElementById("post-search-results");
                 
                 if (key.length == 0) {
                     postsDiv.classList.remove('d-none');
                     filteredPostsDiv.innerHTML = '';
+                    postSearchResultsDiv.innerText = '';
+
                     return;
                 }
                 
@@ -143,18 +146,27 @@ if (window.location.href.includes("/blog")) {
 
                 // include-match
                 const filteredPosts = fuse.search(`'${key}`);
+                console.log(filteredPosts.length);
 
-                let innerHtml = `<div class="row mt-5 post-list">`;
+                let postResultText = "No post found!";
+                
+                if (filteredPosts.length > 0) {
+                    postResultText = `Found ${filteredPosts.length} posts!`;
+                 
+                    let innerHtml = `<div class="row post-list">`;
 
-                for (const filtedPostIdx in filteredPosts) {
-                    const post = filteredPosts[filtedPostIdx].item;
+                    for (const filtedPostIdx in filteredPosts) {
+                        const post = filteredPosts[filtedPostIdx].item;
 
-                    innerHtml += postCardHtml(post);
+                        innerHtml += postCardHtml(post);
+                    }
+                    
+                    innerHtml += `</div>`;
+
+                    filteredPostsDiv.innerHTML = innerHtml;
                 }
                 
-                innerHtml += `</div>`;
-
-                filteredPostsDiv.innerHTML = innerHtml;
+                postSearchResultsDiv.innerText = postResultText;
             });
         })
         .catch(err => console.log(err));
