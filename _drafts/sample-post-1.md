@@ -5,6 +5,7 @@
 # the default layout is post.html
 # it was defined on _config.yml
 
+author: Samuel Martins
 title: Sample post 1 (draft)
 subtitle: Creating an awesome template for my posts!
 # ideal resolution: 1296 x 324
@@ -15,7 +16,6 @@ cover: /assets/images/standard_cover.png
 # ideal resolution: 414 x 200
 thumbnail:
 
-author: Samuel Martins
 tags: ['web', 'data science', 'machine learning']
 permalink: 
 
