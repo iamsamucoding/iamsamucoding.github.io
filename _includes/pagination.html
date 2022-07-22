@@ -1,0 +1,42 @@
+{% if paginator.total_pages > 1 %}
+    <nav aria-label="pagination">
+        <ul class="pagination justify-content-center">
+            {% assign previous_link_disabled_class = "disabled" %}
+            
+            {% if paginator.previous_page %}
+                {% assign previous_link_disabled_class = "" %}
+            {% endif %}
+            <li class="page-item {{previous_link_disabled_class}}">
+                <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}" tabindex="-1" aria-disabled="true">Prev</a>
+            </li>
+
+            {% for page in (1..paginator.total_pages) %}
+                {% assign page_url = site.paginate_path | relative_url | replace: ':num', page %}
+                
+                {% if page == 1 %}
+                    {% assign page_url = "/blog" %}
+                {% endif %}
+
+                {% assign active_page_class = "" %}
+                
+                {% if page == paginator.page %}
+                    {% assign active_page_class = "active" %}
+                {% endif %}
+
+                <li class="page-item {{ active_page_class }}" aria-current="page">
+                    <a class="page-link" href="{{ page_url }}">{{ page }}</a>
+                </li>
+            {% endfor %}
+            
+            {% assign next_link_disabled_class = "disabled" %}
+            
+            {% if paginator.next_page %}
+                {% assign next_link_disabled_class = "" %}
+            {% endif %}
+            <li class="page-item {{next_link_disabled_class}}">
+                <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">Next</a>
+            </li>
+            
+        </ul>
+    </nav>
+{% endif %}

@@ -653,18 +653,36 @@ footer {
 /****************/
 .horizontal-post-card {
     border: 0;
-    
+
     img {
         height: 300px;
         width: 100%;
         object-fit: cover;
     }
-
-    .content {
-//        padding: 1rem 0rem !important;
-    }
 }
 
+.page-item.active .page-link {
+    color: #fff !important;
+    background-color: $base-blue !important;
+    border-color: $base-blue !important;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d !important;
+}
+
+.page-link {
+    color: $base-blue !important;
+
+    &:hover {
+        z-index: 2;
+        color: $base-blue-hover !important;
+    }
+
+    a:visited {
+        color: inherit !important;
+    }
+}
 
 /****************/
 // RESUMÉ
