@@ -115,61 +115,76 @@ if (window.location.href.includes("/blog")) {
     fetch('/posts.json')
         .then(response => response.json())
         .then(posts => {
-            console.log(posts);
             const postSearch = document.getElementById("post-search-input");
 
-            const options = {
-                includeScore: true,
-                threshold: 0,
-                useExtendedSearch: true,
-                keys: ['title', 'subtitle', 'tags', 'date', 'description']
-            };
-
-            const fuse = new Fuse(posts, options);
-
             postSearch.addEventListener("keyup", event => {
-                const key = event.target.value;
-                let postsDiv = document.getElementById("posts");
-                let filteredPostsDiv = document.getElementById("filtered-posts");
-                let postSearchResultsDiv = document.getElementById("post-search-results");
-                
-                if (key.length == 0) {
-                    postsDiv.classList.remove('d-none');
-                    filteredPostsDiv.innerHTML = '';
-                    postSearchResultsDiv.innerText = '';
+                const searchKey = event.target.value;
 
-                    return;
-                }
-                
-                // key > 0
-                postsDiv.classList.add('d-none');
-
-                // include-match
-                const filteredPosts = fuse.search(`'${key}`);
-                console.log(filteredPosts.length);
-
-                let postResultText = "No post found!";
-                
-                if (filteredPosts.length > 0) {
-                    postResultText = `Found ${filteredPosts.length} posts!`;
-                 
-                    let innerHtml = `<div class="row post-list">`;
-
-                    for (const filtedPostIdx in filteredPosts) {
-                        const post = filteredPosts[filtedPostIdx].item;
-
-                        innerHtml += postCardHtml(post);
-                    }
-                    
-                    innerHtml += `</div>`;
-
-                    filteredPostsDiv.innerHTML = innerHtml;
-                }
-                
-                postSearchResultsDiv.innerText = postResultText;
+                const filteredPosts = searchPosts(searchKey, posts);
+                updatePosts(searchKey, filteredPosts);
             });
         })
         .catch(err => console.log(err));
+}
+
+
+const searchPosts = (searchKey, posts) => {
+    const options = {
+        includeScore: true,
+        threshold: 0,
+        useExtendedSearch: true,
+        keys: ['title', 'subtitle', 'tags', 'date', 'description']
+    };
+
+    const fuse = new Fuse(posts, options);
+
+    // include-match
+    const filteredPosts = fuse.search(`'${searchKey}`);
+
+    return filteredPosts;
+}
+
+const updatePosts = (searchKey, filteredPosts) => {
+    let postsDiv = document.getElementById("posts");
+    let filteredPostsDiv = document.getElementById("filtered-posts");
+    let postSearchResultsDiv = document.getElementById("post-search-results");
+
+    // clean filtered posts div and unhidden the pagination posts
+    if (searchKey.length == 0) {
+        postsDiv.classList.remove('d-none');
+        filteredPostsDiv.innerHTML = '';
+        postSearchResultsDiv.innerText = '';
+
+        return;
+    }
+
+    let postResultText = "";
+
+    if (filteredPosts.length > 0) {
+        postResultText = `Found ${filteredPosts.length} posts!`;
+
+        let innerHtml = `<div class="row post-list">`;
+
+        for (const filtedPostIdx in filteredPosts) {
+            const post = filteredPosts[filtedPostIdx].item;
+
+            innerHtml += postCardHtml(post);
+        }
+
+        innerHtml += `</div>`;
+
+        filteredPostsDiv.innerHTML = innerHtml;
+    }
+    else {
+        // NO POST FOUND!
+
+        // clean pagination posts and filtered posts
+        postResultText = "No post found!";
+        postsDiv.classList.add('d-none');
+        filteredPostsDiv.innerHTML = '';
+    }
+
+    postSearchResultsDiv.innerText = postResultText;
 }
 
 
