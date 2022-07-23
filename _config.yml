@@ -1,12 +1,52 @@
 ---
 # for SEO purposes
 title: Samuel B. Martins (Samuka) logbook
-tagline: A website about me and posts on ML
+title_separator: "-"
+subtitle: A website about me and posts on ML
+name: Samuel Botter Martins (Samuka)
 description: A website that works as my logbook, hosting my blog, with ML and computing tutorials, research, portfolio, teaching notes, and other general stuff
+url: https://hisamuka.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl: # the subpath of your site, e.g. "/blog"
+teaser: /assets/images/malta.png  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+image: /assets/images/malta.png
+
 author:
   name: Samuel Botter Martins (Samuka)
-  url: https://hisamuka.github.io
-  twitter: hisamuka
+  avatar: /assets/images/malta.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: I am an assistant professor, data scientist, researcher, and YouTube creator.
+  location: Campinas, Brazil
+  email: samuel.martins@ifsp.edu.br
+  links:
+    - label: Linkedin
+      url: https://www.linkedin.com/in/samuel-botter-martins
+      badge: https://img.shields.io/badge/-LinkedIn-306EA8?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/samuel-botter-martins
+      icon: <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i>
+      show_sidebar: true
+    - label: Twitter
+      url: https://twitter.com/hisamuka
+      badge: https://img.shields.io/badge/-Twitter-4B9AE5?style=flat&amp;logo=Twitter&amp;logoColor=white&amp;link=https://twitter.com/hisamuka
+      icon: <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i>
+      show_sidebar: true
+    - label: GitHub
+      url: https://github.com/hisamuka
+      badge: https://img.shields.io/badge/-GitHub-2F2F2F?style=flat&logo=github&logoColor=white&link=https://github.com/hisamuka
+      icon: <i class="fab fa-fw fa-github" aria-hidden="true"></i>
+      show_sidebar: true
+    - label: YouTube
+      url: https://www.youtube.com/xavecoding
+      badge: https://img.shields.io/youtube/channel/subscribers/UCICVlpgW9gVd0UXbOALDFaQ?label=YouTube&style=social
+      icon: <i class="fab fa-brands fa-youtube" aria-hidden="true"></i>
+      show_sidebar: true
+    - label: Google Scholar
+      url: https://scholar.google.com.br/citations?user=f6Cc4nUAAAAJ&hl
+      badge: https://img.shields.io/badge/-Google_Scholar-676767?style=flat&logo=google-scholar&logoColor=white&link=https://scholar.google.com.br/citations?user=f6Cc4nUAAAAJ&hl=en
+      icon: ''
+      show_sidebar: false
+
+twitter:
+  username: hisamuka
+og_image: /assets/images/malta.png  # Open Graph/Twitter default site image
+
 logo: /assets/images/samuka-logo.png
 social:
   name: Samuel Botter Martins
@@ -17,6 +57,7 @@ social:
     - https://www.youtube.com/xavecoding
 
 timezone: UTC
+words_per_minute: 200.0
 collections:
   posts:
     title: Posts
@@ -24,35 +65,9 @@ collections:
   uploads:
     title: Uploads
     output: true
-email: samuel.martins@ifsp.edu.br
-twitter: https://twitter.com/hisamuka
-location: Campinas, Brazil
-social_networks:
-- name: Linkedin
-  link: https://www.linkedin.com/in/samuel-botter-martins
-  badge: https://img.shields.io/badge/-LinkedIn-306EA8?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/samuel-botter-martins
-  icon: <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i>
-  show_sidebar: true
-- name: Twitter
-  link: https://twitter.com/hisamuka
-  badge: https://img.shields.io/badge/-Twitter-4B9AE5?style=flat&amp;logo=Twitter&amp;logoColor=white&amp;link=https://twitter.com/hisamuka
-  icon: <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i>
-  show_sidebar: true
-- name: GitHub
-  link: https://github.com/hisamuka
-  badge: https://img.shields.io/badge/-GitHub-2F2F2F?style=flat&logo=github&logoColor=white&link=https://github.com/hisamuka
-  icon: <i class="fab fa-fw fa-github" aria-hidden="true"></i>
-  show_sidebar: true
-- name: YouTube
-  link: https://www.youtube.com/xavecoding
-  badge: https://img.shields.io/youtube/channel/subscribers/UCICVlpgW9gVd0UXbOALDFaQ?label=YouTube&style=social
-  icon: <i class="fab fa-brands fa-youtube" aria-hidden="true"></i>
-  show_sidebar: true
-- name: Google Scholar
-  link: https://scholar.google.com.br/citations?user=f6Cc4nUAAAAJ&hl
-  badge: https://img.shields.io/badge/-Google_Scholar-676767?style=flat&logo=google-scholar&logoColor=white&link=https://scholar.google.com.br/citations?user=f6Cc4nUAAAAJ&hl=en
-  icon: ''
-  show_sidebar: false
+    
+    
+
 disqus:
   shortname: https-hisamuka-github-io
  
