@@ -3,8 +3,8 @@
 
 {% if include.post.thumbnail %}
     {% assign thumbnail = include.post.thumbnail %}
-{% elsif include.post.cover %}
-    {% assign thumbnail = include.post.cover %}
+{% elsif include.post.image %}
+    {% assign thumbnail = include.post.image %}
 {% endif %}
 
 {% assign estimated_reading_time = include.post.content | number_of_words | divided_by: 200.0 | round %}

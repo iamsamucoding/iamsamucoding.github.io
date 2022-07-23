@@ -8,7 +8,7 @@
 title: Sample post 4 (draft)
 subtitle: Yeah yeah yeah yeah!
 # ideal resolution: 1296 x 324
-cover: https://random-ize.com/lorem-ipsum-generators/beer/suds3.jpg
+image: https://random-ize.com/lorem-ipsum-generators/beer/suds3.jpg
 
 # Used on post listing. If not provided, the cover will be used.
 # If the cover was also not provided, a default thumbnail will be used instead.

@@ -8,7 +8,7 @@
 title: Sample post 7 (draft)
 subtitle: Uow, another sample post just to code the blog page layout!
 # ideal resolution: 1296 x 324
-cover: https://images.pexels.com/photos/6146173/pexels-photo-6146173.jpeg?auto=compress&cs=tinysrgb&w=1600
+image: https://images.pexels.com/photos/6146173/pexels-photo-6146173.jpeg?auto=compress&cs=tinysrgb&w=1600
 
 # Used on post listing. If not provided, the cover will be used.
 # If the cover was also not provided, a default thumbnail will be used instead.

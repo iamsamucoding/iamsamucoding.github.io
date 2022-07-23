@@ -8,7 +8,7 @@
 title: Sample post 9 (draft)
 subtitle: Creating an awesome template for my posts!
 # ideal resolution: 1296 x 324
-cover: /assets/images/standard_cover.png
+image: /assets/images/standard_cover.png
 
 # Used on post listing. If not provided, the cover will be used.
 # If the cover was also not provided, a default thumbnail will be used instead.
