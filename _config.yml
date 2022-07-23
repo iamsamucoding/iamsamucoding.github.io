@@ -52,9 +52,16 @@ defaults:
       comments: true   # change to false to default to comments off site-wide
 
 
+# https://github.com/jekyll/jekyll-sitemap
+url: "https://hisamuka.github.io" # the base hostname & protocol for your site
+
 # https://blog.webjeda.com/jekyll-pagination/#pagination-can-be-done-only-on-indexhtml
 plugins:
   - jekyll-paginate
+  - jekyll-sitemap
+
 
 paginate: 10
 paginate_path: "/blog/page:num/"
+
+
