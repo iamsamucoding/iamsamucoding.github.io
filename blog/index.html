@@ -29,16 +29,18 @@ layout: main
     </div>
     
     <div id="posts">
-        {% assign firstPost = paginator.posts | first %}
-        {% include post/horizontal_card.html post=firstPost %}
+        {% if paginator.posts.size > 0 %}
+            {% assign firstPost = paginator.posts | first %}
+            {% include post/horizontal_card.html post=firstPost %}
 
-        <div class="row mt-5 post-list">
-            {% for post in paginator.posts offset:1 %}
-                {% include post/card.html post=post cssClass="col-sm-6 col-md-4 mb-3" %}
-            {% endfor %}
-        </div>
+            <div class="row mt-5 post-list">
+                {% for post in paginator.posts offset:1 %}
+                    {% include post/card.html post=post cssClass="col-sm-6 col-md-4 mb-3" %}
+                {% endfor %}
+            </div>
 
-        {% include pagination.html %}
+            {% include pagination.html %}
+        {% endif %}
     </div>
 
 
