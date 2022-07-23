@@ -154,9 +154,11 @@ const updatePosts = (searchKey, filteredPosts) => {
         postsDiv.classList.remove('d-none');
         filteredPostsDiv.innerHTML = '';
         postSearchResultsDiv.innerText = '';
-
+        
         return;
     }
+
+    postsDiv.classList.add('d-none');
 
     let postResultText = "";
 
