@@ -1,0 +1,17 @@
+---
+layout: main
+---
+
+{% include section-begin.html id="tags" title="Tags" %}
+<ul class="super-style">
+    {% assign sorted_tags = site.tags | sort %}
+    {% for tag_object in sorted_tags %}
+        {% assign tag = tag_object[0] %}
+            <li>
+                <i class="bi bi-chevron-right"></i>
+                <a href="/tags/{{ tag }}" rel="nofollow noopener noreferrer">{{ tag }}</a>
+            </li>
+    {% endfor %}
+</ul>
+
+{% include section-end.html %}

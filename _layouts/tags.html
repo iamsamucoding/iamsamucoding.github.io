@@ -3,7 +3,7 @@ layout: main
 ---
 
 {% assign title = "Tag: " | append: page.tag %}
-{% include section-begin.html id="tags" title=title %}
+{% include section-begin.html id="tag-page" title=title %}
     <div id="tag-posts">
         <div class="row mt-5 post-list">
             {% for post in site.tags[page.tag] %}
