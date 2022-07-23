@@ -14,12 +14,12 @@ This callback function changes some styles defined on styles.scss to hide/show t
             
             <h1 class="text-light"><a href="index.html">Samuel Martins</a></h1>
             <div class="social-links mt-3 text-center">
-                {% for item in site.social_networks %}
+                {% for item in site.author.links %}
                     {% if item.show_sidebar %}
-                        <a href="{{ item.link }}" rel="nofollow noopener noreferrer" class="{{ item.name }}">{{ item.icon }}</a>
+                        <a href="{{ item.url }}" rel="nofollow noopener noreferrer" class="{{ item.label }}">{{ item.icon }}</a>
                     {% endif %}
                 {% endfor %}
-                <a href="mailto:{{ site.email }}" rel="nofollow noopener noreferrer"><i class="bi bi-envelope-fill"></i></a></li>
+                <a href="mailto:{{ site.author.email }}" rel="nofollow noopener noreferrer"><i class="bi bi-envelope-fill"></i></a></li>
             </div>
         </div>
         <nav id="navbar" class="nav-menu navbar navbar-expand">

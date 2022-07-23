@@ -1,5 +1,5 @@
 <ul class="badge-list">
-    {% for item in site.social_networks %}
-        <li><a href="{{ item.link }}" rel="nofollow noopener noreferrer" target="_blank"><img src='{{ item.badge }}' alt='{{ item.name }} badge' /></a></li>
+    {% for item in site.author.links %}
+        <li><a href="{{ item.url }}" rel="nofollow noopener noreferrer" target="_blank"><img src='{{ item.badge }}' alt='{{ item.label }} badge' /></a></li>
     {% endfor %}
 </ul>

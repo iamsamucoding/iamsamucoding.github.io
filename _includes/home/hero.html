@@ -6,12 +6,12 @@
         </p>
 
         <div class="hero-social-links">
-            {% for item in site.social_networks %}
-            {% if item.show_sidebar %}
-            <a href="{{ item.link }}" rel="nofollow noopener noreferrer">{{ item.icon }}</a>
-            {% endif %}
+            {% for item in site.author.links %}
+                {% if item.show_sidebar %}
+                    <a href="{{ item.url }}" rel="nofollow noopener noreferrer">{{ item.icon }}</a>
+                {% endif %}
             {% endfor %}
-            <a href="mailto:{{ site.email }}" rel="nofollow noopener noreferrer"><i class="bi bi-envelope-fill"></i></a>
+            <a href="mailto:{{ site.author.email }}" rel="nofollow noopener noreferrer"><i class="bi bi-envelope-fill"></i></a>
             </li>
         </div>
     </div>
