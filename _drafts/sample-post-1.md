@@ -16,11 +16,13 @@ cover: /assets/images/standard_cover.png
 # ideal resolution: 414 x 200
 thumbnail:
 
-tags: ['web', 'data science', 'machine learning']
+tags: web data-science machine-learning
 permalink: 
 
 # true by default
 comments: 
+
+tag-name: tag1 tag2
 ---
 
 Mussum Ipsum, cacilds vidis litro abertis.  Praesent malesuada urna nisi, quis volutpat erat hendrerit non.  Nam vulputate dapibus. Casamentiss faiz malandris se pirulitá. Detraxit consequat et quo num tendi nada. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet.  Sed non consequat odio. 

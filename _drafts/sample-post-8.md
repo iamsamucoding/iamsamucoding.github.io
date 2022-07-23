@@ -16,7 +16,7 @@ cover: https://random-ize.com/lorem-ipsum-generators/beer/suds3.jpg
 thumbnail:
 
 author: Samuel Martins
-tags: ['web', 'beer']
+tags: web beer
 permalink: 
 
 # true by default

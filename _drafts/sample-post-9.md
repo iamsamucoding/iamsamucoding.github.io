@@ -16,7 +16,7 @@ cover: /assets/images/standard_cover.png
 thumbnail:
 
 author: Samuel Martins
-tags: ['web', 'data science', 'machine learning']
+tags: web data-science machine-learning
 permalink: 
 
 # true by default

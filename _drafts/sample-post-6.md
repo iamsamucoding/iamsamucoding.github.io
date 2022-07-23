@@ -16,7 +16,7 @@ cover: https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=com
 thumbnail:
 
 author: Samuel Martins
-tags: ['reading']
+tags: reading
 permalink: 
 
 # true by default
