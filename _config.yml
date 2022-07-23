@@ -1,5 +1,21 @@
 ---
-title: Hisamuka.Github.Io
+# for SEO purposes
+title: Samuel B. Martins (Samuka) logbook
+tagline: A website about me and posts on ML
+description: A website that works as my logbook, hosting my blog, with ML and computing tutorials, research, portfolio, teaching notes, and other general stuff
+author:
+  name: Samuel Botter Martins (Samuka)
+  url: https://hisamuka.github.io
+  twitter: hisamuka
+logo: /assets/images/samuka-logo.png
+social:
+  name: Samuel Botter Martins
+  links:
+    - https://twitter.com/hisamuka
+    - https://www.linkedin.com/in/samuel-botter-martins
+    - https://github.com/hisamuka
+    - https://www.youtube.com/xavecoding
+
 timezone: UTC
 collections:
   posts:
@@ -52,12 +68,10 @@ defaults:
       comments: true   # change to false to default to comments off site-wide
 
 
-# https://github.com/jekyll/jekyll-sitemap
-url: "https://hisamuka.github.io" # the base hostname & protocol for your site
-
 # https://blog.webjeda.com/jekyll-pagination/#pagination-can-be-done-only-on-indexhtml
 plugins:
   - jekyll-paginate
+  - jekyll-seo-tag
   - jekyll-sitemap
 
 
