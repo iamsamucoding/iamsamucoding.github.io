@@ -1,4 +1,0 @@
----
-layout: tags
-tag: cats
----
