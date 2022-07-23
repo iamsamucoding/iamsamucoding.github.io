@@ -1,0 +1,14 @@
+---
+layout: main
+---
+
+{% assign title = "Tag: " | append: page.tag %}
+{% include section-begin.html id="tags" title=title %}
+    <div id="tag-posts">
+        <div class="row mt-5 post-list">
+            {% for post in site.tags[page.tag] %}
+                {% include post/card.html post=post cssClass="col-sm-6 col-md-4 mb-3" %}
+            {% endfor %}
+        </div>
+    </div>
+{% include section-end.html %}
