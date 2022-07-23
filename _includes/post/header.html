@@ -18,8 +18,11 @@
         <p class="post-tags">
             <i class="fas fa-tags"></i>
 
-            {% for tag in page.tags %}
-            <span class="tag-item">{{ tag }}</span>
+            {% assign sorted_tags = page.tags | sort %}
+            {% for tag in sorted_tags %}
+                <span class="tag-item">
+                    <a href="/tags/{{ tag }}" rel="nofollow noopener noreferrer">{{ tag }}</a>
+                </span>
             {% endfor %}
         </p>
     {% endif %}

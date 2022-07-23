@@ -1011,14 +1011,6 @@ footer {
         }
     }
 
-    &-tags {   
-        // color: #92a3ab;
-
-        .tag-item {
-            margin-right: 0.3em;
-        }
-    }
-
     &-cover img {
         width: 100%;
         max-height: 324px;
@@ -1050,6 +1042,9 @@ footer {
     }
 }
 
+.tag-item {
+    margin-right: 0.3em;
+}
 
 
 

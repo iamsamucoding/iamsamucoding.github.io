@@ -4,8 +4,20 @@ layout: main
 
 {% include section-begin.html id="blog" title="Blog" %}
     <p>This blog aims to share a bit of my knowledge about technical subjects on machine learning, deep learning, and computing. Sometimes a technical deep dive or a soft skills piece. My posts may also include personal thoughts and reflections on life and career.</p>
-    <p class="mb-5">Don't want to miss a thing? Follow me on <a href="{{ site.twitter }}" rel="nofollow noopener noreferrer" target="_blank">Twitter</a>.</p>
+    <p class="mb-4">Don't want to miss a thing? Follow me on <a href="{{ site.twitter }}" rel="nofollow noopener noreferrer" target="_blank">Twitter</a>.</p>
    
+    <div id="tags" class="mb-3">
+        <h4>Tags <i class="fas fa-tags" style="font-size: 1rem"></i></h4>
+
+        {% assign sorted_tags = site.tags | sort %}
+        {% for tag_object in sorted_tags %}
+            {% assign tag = tag_object[0] %}
+            <span class="tag-item">
+                <a href="/tags/{{ tag }}" rel="nofollow noopener noreferrer">{{ tag }}</a>
+            </span>
+        {% endfor %}
+    </div>
+
     <div id="post-search-container" class="d-flex flex-column mb-3">
         <div class="input-group">
             <input type="text" id="post-search-input" class="form-control" placeholder="Filter posts" aria-label="Filter posts">
