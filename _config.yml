@@ -80,7 +80,16 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true   # change to false to default to comments off site-wide
+      title: Sample post 1 (draft)
+      subtitle:
+      image: # ideal resolution: 1296 x 324
+      # Used on post listing. If not provided, the cover will be used.
+      # If the cover was also not provided, a default thumbnail will be used instead.
+      # ideal resolution: 414 x 200
+      thumbnail:
+      tags:
+      permalink: 
+      comments: true
 
 
 # https://blog.webjeda.com/jekyll-pagination/#pagination-can-be-done-only-on-indexhtml
