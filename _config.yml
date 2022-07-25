@@ -7,12 +7,12 @@ name: Samuel Botter Martins (Samuka)
 description: A website that works as my logbook, hosting my blog, with ML and computing tutorials, research, portfolio, teaching notes, and other general stuff
 url: https://hisamuka.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
-teaser: /assets/images/malta.png  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-image: /assets/images/malta.png
+teaser: /assets/images/website-thumbnail.png  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+image: /assets/images/website-thumbnail.png
 
 author:
   name: Samuel Botter Martins (Samuka)
-  avatar: /assets/images/malta.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar: /assets/images/website-thumbnail.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: I am an assistant professor, data scientist, researcher, and YouTube creator.
   location: Campinas, Brazil
   email: samuel.martins@ifsp.edu.br
@@ -46,7 +46,7 @@ author:
 
 twitter:
   username: hisamuka
-og_image: /assets/images/malta.png  # Open Graph/Twitter default site image
+og_image: /assets/images/website-thumbnail.png  # Open Graph/Twitter default site image
 
 logo: /assets/images/samuka-logo.png
 social:
