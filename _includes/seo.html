@@ -57,7 +57,7 @@
   {% endif %}
 {% endif %}
 
-<meta property="og:type" content="{{ og_type }}">
+<!-- <meta property="og:type" content="{{ og_type }}"> -->
 <meta property="og:locale" content="{{ site.locale | replace: "-", "_" | default: "en_US" }}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
@@ -84,7 +84,7 @@
     <meta name="twitter:image" content="{{ page_large_image }}" id="oi2>
     <meta name="twitter:image:src" content="{{ page_large_image }}">
     {% else %}
-    <meta name="twitter:card" content="summary">
+      <meta name="twitter:card" content="summary_large_image">
     {% if page_teaser_image %}
       <meta name="twitter:image" content="{{ page_teaser_image }}">
       <meta name="twitter:image:src" content="{{ page_teaser_image }}">
