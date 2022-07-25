@@ -107,6 +107,11 @@ for (const heading of postHeadings) {
     heading.insertAdjacentHTML('beforeend', `<a href="#${heading.id}" rel="nofollow noopener noreferrer"><i class="bi bi-link-45deg"></i></a>`)
 }
 
+// POPOVER TO COPY A POST'S URL
+const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+const popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl);
+});
 
 ///////////////////////////
 // SEARCHING POSTS ON BLOG PAGE
