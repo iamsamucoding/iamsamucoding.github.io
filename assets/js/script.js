@@ -36,9 +36,16 @@ const on = (type, elem, listener, all = false) => {
 // HIGHLIGHT MENU LINK
 ///////////////////////////
 function getBaseName() {
-    const index = window.location.href.lastIndexOf("/") + 1;
-    const basenameWithExtension = window.location.href.slice(index);
-    const basename = basenameWithExtension.split(".")[0];
+    const originUrl = window.location.origin;
+    console.log(originUrl);
+    const fullUrl = window.location.href;  // origin/something
+    console.log(fullUrl);
+    const relativePath = fullUrl.split(originUrl)[1];  // only get what comes after the originUrl
+    console.log(relativePath);
+    let basename = relativePath.split(".")[0];
+    console.log(basename);
+    basename = basename.replaceAll('/', '');  // replace '/'
+    console.log(basename);
 
     return basename;
 }
