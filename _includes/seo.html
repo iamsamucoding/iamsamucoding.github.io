@@ -53,10 +53,11 @@
 {% if author.name %}
   <meta name="author" content="{{ author.name | default: author }}">
   {% if og_type == "article" %}
-  <meta property="article:author" content="{{ author.name | default: author }}">
+    <meta property="article:author" content="{{ author.name | default: author }}">
   {% endif %}
 {% endif %}
 
+<meta property="og:type" content="{{ og_type }}">
 <meta property="og:locale" content="{{ site.locale | replace: "-", "_" | default: "en_US" }}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
