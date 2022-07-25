@@ -10,12 +10,12 @@
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex social-links">
                 {% for item in site.author.links %}
                     {% if item.show_sidebar %}
-                        <li><a href="{{ item.url }}" rel="nofollow noopener noreferrer">{{ item.icon }}</a></li>
+                        <li><a href="{{ item.url }}" rel="nofollow noopener noreferrer" target="_blank" alt="{{item.label}}">{{ item.icon }}</a></li>
                     {% endif %}
                 {% endfor %}
                 
-                <li><a href="mailto:{{ site.author.email }}" rel="nofollow noopener noreferrer"><i class="bi bi-envelope-fill"></i></a></li>
-                <li><a href="#" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i></a></li>
+                <li><a href="mailto:{{ site.author.email }}" rel="nofollow noopener noreferrer" alt="rss"><i class="bi bi-envelope-fill"></i></a></li>
+                <li><a href="/feed.xml" rel="nofollow noopener noreferrer" target="_blank" alt="rss"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i></a></li>
             </ul>
         </div>
     </div>
