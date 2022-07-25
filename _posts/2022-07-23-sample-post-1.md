@@ -5,7 +5,7 @@
 # the default layout is post.html
 # it was defined on _config.yml
 
-author: Samuel Martins
+# author: Samuel Martins
 title: Sample post 1 (draft)
 subtitle: Creating an awesome template for my posts!
 # ideal resolution: 1296 x 324

@@ -15,7 +15,6 @@ image: /assets/images/standard_cover.png
 # ideal resolution: 414 x 200
 thumbnail:
 
-author: Samuel Martins
 tags: web data-science machine-learning
 permalink: 
 

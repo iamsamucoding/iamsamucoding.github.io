@@ -15,7 +15,6 @@ image: https://images.pexels.com/photos/6146173/pexels-photo-6146173.jpeg?auto=c
 # ideal resolution: 414 x 200
 thumbnail:
 
-author: Samuel Martins
 tags: cats data-science machine-learning
 permalink: 
 

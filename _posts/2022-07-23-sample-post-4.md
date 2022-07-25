@@ -15,7 +15,6 @@ image: https://random-ize.com/lorem-ipsum-generators/beer/suds3.jpg
 # ideal resolution: 414 x 200
 thumbnail:
 
-author: Samuel Martins
 tags: web beer
 permalink: 
 

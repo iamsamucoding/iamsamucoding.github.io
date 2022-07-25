@@ -15,7 +15,6 @@ image: https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=com
 # ideal resolution: 414 x 200
 thumbnail:
 
-author: Samuel Martins
 tags: reading
 permalink: 
 
