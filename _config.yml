@@ -103,4 +103,6 @@ plugins:
 paginate: 10
 paginate_path: "/blog/page:num/"
 
+# Google Analytics
+google_analytics: G-DJKRVBCLHY
 
