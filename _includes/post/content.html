@@ -1,6 +1,8 @@
-<div class="post-cover d-flex justify-content-center mb-5">
-    <img alt='cover image' src="{{ page.image }}" />
-</div>
+{% if page.image %}
+    <div class="post-cover d-flex justify-content-center mb-5">
+        <img alt='cover image' src="{{ page.image }}" />
+    </div>
+{% endif %}
 
 <div class="post-content">
     {{ content }}
