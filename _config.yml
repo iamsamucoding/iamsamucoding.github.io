@@ -8,7 +8,6 @@ description: A website that works as my logbook, hosting my blog, with ML and co
 url: https://hisamuka.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 teaser: /assets/images/website-thumbnail.png  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-image: /assets/images/website-thumbnail.png
 
 author:
   name: Samuel Botter Martins (Samuka)
