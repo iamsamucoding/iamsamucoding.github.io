@@ -5,7 +5,7 @@ title_separator: "-"
 subtitle: A website about me and posts on ML
 name: Samuel Botter Martins (Samuka)
 description: A website that works as my logbook, hosting my blog, with ML and computing tutorials, research, portfolio, teaching notes, and other general stuff
-url: https://hisamuka.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: https://samucoding.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 teaser: /assets/images/website-thumbnail.png  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 
@@ -23,12 +23,12 @@ author:
       icon: <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i>
       show_sidebar: true
     - label: Twitter
-      url: https://twitter.com/hisamuka
+      url: https://twitter.com/samucoding
       badge: https://img.shields.io/badge/-Twitter-4B9AE5?style=flat&amp;logo=Twitter&amp;logoColor=white&amp;link=https://twitter.com/hisamuka
       icon: <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i>
       show_sidebar: true
     - label: GitHub
-      url: https://github.com/hisamuka
+      url: https://github.com/iamsamucoding
       badge: https://img.shields.io/badge/-GitHub-2F2F2F?style=flat&logo=github&logoColor=white&link=https://github.com/hisamuka
       icon: <i class="fab fa-fw fa-github" aria-hidden="true"></i>
       show_sidebar: true
@@ -44,16 +44,16 @@ author:
       show_sidebar: false
 
 twitter:
-  username: hisamuka
+  username: samucoding
 og_image: /assets/images/website-thumbnail.png  # Open Graph/Twitter default site image
 
 logo: /assets/images/samuka-logo.png
 social:
   name: Samuel Botter Martins
   links:
-    - https://twitter.com/hisamuka
+    - https://twitter.com/samucoding
     - https://www.linkedin.com/in/samuel-botter-martins
-    - https://github.com/hisamuka
+    - https://github.com/iamsamucoding
     - https://www.youtube.com/xavecoding
 
 timezone: UTC
@@ -69,7 +69,7 @@ collections:
     
 
 disqus:
-  shortname: https-hisamuka-github-io
+  shortname: https-samucoding-com
  
 default_post_thumbnail: "data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22316%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20316%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17f48594a84%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A16pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17f48594a84%22%3E%3Crect%20width%3D%22316%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22108.19921875%22%20y%3D%2297.35%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
 
