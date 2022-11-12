@@ -14,7 +14,7 @@
       icon: '<i class="bi bi-pie-chart-fill"></i>'
     - name: Scikit-learn, XGboost, PyCaret
       icon: '<i class="bi bi-robot"></i>'
-    - name: TensorFlow, Keras, Pytorch
+    - name: Keras, Pytorch
       icon: '<i class="bi bi-share-fill"></i>'
     - name: Scikit-image, OpenCV, nibabel
       icon: '<i class="bi bi-image-fill"></i>'
