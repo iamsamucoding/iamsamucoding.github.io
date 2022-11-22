@@ -1,5 +1,13 @@
 channelLink: https://www.youtube.com/c/xavecoding
 courses:
+  - title: 'Data Science Playlist'
+    icon: 'bx bx-atom'
+    translation: ''
+    tag: 'data science'
+    description: 'Playlist with videos about Data Science in general.'
+    embedLink: https://www.youtube.com/embed/videoseries?list=PL3ZslI15yo2pXE5bPwAmJGvnQt-jAwMy8
+    link: https://www.youtube.com/playlist?list=PL3ZslI15yo2pXE5bPwAmJGvnQt-jAwMy8
+    github: 
   - title: 'Python Essencial para Data Science'
     icon: 'fa-brands fa-python'
     translation: 'Essential Python for Data Science'
