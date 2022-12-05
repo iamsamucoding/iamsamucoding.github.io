@@ -1,8 +1,8 @@
 - paper: 'Federated Learning Enables Big Data for Rare Cancer Boundary Detection'
   authors: 'Sarthak Pati, Samuel B. Martins, <i>et al.</i>'
   cover: /assets/images/papers/nature2022.png
-  reference: '<i>Nature</i> (accepted for publication). arXiv preprint arXiv:2204.10836 (2022).'
-  link: https://arxiv.org/abs/2204.10836
+  reference: '<i>Nature Communications</i> 13, 7346 (2022)'
+  link: https://www.nature.com/articles/s41467-022-33407-5
   abstract: "Although machine learning (ML) has shown promise in numerous domains, there are concerns about generalizability to out-of-sample data. This is currently addressed by centrally sharing ample, and importantly diverse, data from multiple sites. However, such centralization is challenging to scale (or even not feasible) due to various limitations. Federated ML (FL) provides an alternative to train accurate and generalizable ML models, by only sharing numerical model updates. Here we present findings from the largest FL study to-date, involving data from 71 healthcare institutions across 6 continents, to generate an automatic tumor boundary detector for the rare disease of glioblastoma, utilizing the largest dataset of such patients ever used in the literature (25,256 MRI scans from 6,314 patients). We demonstrate a 33% improvement over a publicly trained model to delineate the surgically targetable tumor, and 23% improvement over the tumor's entire extent. We anticipate our study to: 1) enable more studies in healthcare informed by large and diverse data, ensuring meaningful results for rare diseases and underrepresented populations, 2) facilitate further quantitative analyses for glioblastoma via performance optimization of our consensus model for eventual public release, and 3) demonstrate the effectiveness of FL at such scale and task complexity as a paradigm shift for multi-site collaborations, alleviating the need for data sharing."
   important: true
 - paper: 'Combining Registration Errors and Supervoxel Classification for Unsupervised Brain Anomaly Detection'
