@@ -47,7 +47,7 @@ courses:
     description: "Journey on <i>Algorithms</i>.<br/> In this series, we'll look at topics like Time Complexity, Sorting Algorithms, Search Algorithms, Programming Paradigms, and much more."
     embedLink: https://www.youtube.com/embed/videoseries?list=PL3ZslI15yo2rArHQeVSafCu8IUjRleW_y
     link: https://www.youtube.com/playlist?list=PL3ZslI15yo2rArHQeVSafCu8IUjRleW_y
-    github: https://github.com/xavecoding/dominando-estruturas-de-dados-1
+    github: 
   - title: 'Dominando Estruturas de Dados 1'
     icon: 'bi bi-building'
     translation: 'Mastering Data Structures #1'
