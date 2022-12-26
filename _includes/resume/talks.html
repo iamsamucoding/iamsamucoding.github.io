@@ -1,0 +1,19 @@
+<div id="talks" class="mt-5">
+    <h3 class="subsection-heading color-main">Talks <i class='bx bxs-message-rounded-detail'></i></h3>
+
+    {% for item in site.data.talks %}
+        <div class="talk-item mb-4">
+            <ul>
+                <li><b>{{ item.title }} <span class="badge badge-inverted">{{ item.date }}</span></b></li>
+                {% if item.translation %}
+                    <li><b><i>{{ item.translation }}</i></b></li>
+                {% endif %}
+                <li><i>{{ item.event }}</i>
+                <li>{{ item.location }}</li>
+            </ul>
+            {% if item.presentation %}
+                <a href="{{ item.presentation }}" class="btn bg-main active" role="button" aria-pressed="true" rel="nofollow noopener noreferrer" target="_blank" style="padding: 0.3rem; font-size: 0.8rem; font-weight: 700;"><i class="bi bi-camera-reels-fill"></i> Presentation</a>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>
