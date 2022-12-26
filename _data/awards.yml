@@ -5,6 +5,7 @@
   work: '<b>Thesis:</b> Unsupervised Brain Anomaly Detection in MR Images.'
   paper: http://sibgrapi.sid.inpe.br/rep/8JMKD3MGPEW34M/45CT8PH
   certificate: /assets/docs/awards/best-phd-thesis-SIBGRAPI-2021.pdf
+  presentation: https://www.youtube.com/watch?v=ve3EaqHNBW8
 - award: Best Student Paper Awards
   issuer: BIOSTECT BIOIMAGING
   location: Valleta, Malta
@@ -12,6 +13,7 @@
   work: '<b>Paper:</b> BADRESC: Brain Anomaly Detection based on Registration Errors and Supervoxel Classification.'
   paper: http://www.staff.science.uu.nl/~telea001/uploads/PAPERS/BIOIMAGING20/paper.pdf
   certificate: /assets/docs/awards/best-student-paper-award-BIOIMAGING-2020.pdf
+  presentation: 
 - award: Best Student Paper Award Finalist
   issuer: SPIE Medical Imaging
   location: Orlando, USA
@@ -19,3 +21,4 @@
   work: '<b>Paper:</b> A Multi-Object Statistical Atlas Adaptive for Deformable Registration Errors in Anomalous Medical Image Segmentation.'
   paper: https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10133/101332G/A-multi-object-statistical-atlas-adaptive-for-deformable-registration-errors/10.1117/12.2254477.full
   certificate: /assets/docs/awards/best-student-paper-finalist-SPIE-17.pdf
+  presentation: 
