@@ -90,6 +90,7 @@ defaults:
       tags:
       permalink: 
       comments: true
+      print_last_modified_date: False
 
 
 # https://blog.webjeda.com/jekyll-pagination/#pagination-can-be-done-only-on-indexhtml

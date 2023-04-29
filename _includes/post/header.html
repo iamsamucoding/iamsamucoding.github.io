@@ -26,6 +26,9 @@
             {% endfor %}
         </p>
     {% endif %}
+    {% if page.print_last_modified_date %}
+        <p><b>Last update:</b> {{ page.last-modified-date | date_to_string }}</p>
+    {% endif %}
     <div class="post-share">
         Share:
         <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
