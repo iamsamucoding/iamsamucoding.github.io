@@ -1,19 +1,20 @@
-- position: Lecturer / Content Provider
-  company: Virtual University of the State of São Paulo (UNIVESP)
-  date: 11/2022 – present
-  assignments:
-    - Developing teaching materials and conducting classes for undergraduate computer courses.
+# - position: Lecturer / Content Provider
+#   company: Virtual University of the State of São Paulo (UNIVESP)
+#   date: 11/2022 – present
+#   assignments:
+#     - Developing teaching materials and conducting classes for undergraduate computer courses.
 - position: Coordinator of Data Science Specialization
   company: Federal Institute of Education, Science, and Technology of São Paulo (IFSP) - Campinas-SP (Brazil)
   date: 10/2020 – present
   assignments:
     - Faculty management, project and student supervision, and fundraising.
-- position: YouTube Creator
-  company: 'Channel:  <a href="https://youtube.com/xavecoding" target="_blank" rel="nofollow noopener noreferrer">xavecoding</a> (aimed at Portuguese speakers)'
+    - 'Conducting the courses: Statistics, Machine Learning, Neural Networks, Deep Learning, and Natural Language Processing.'
+- position: Tech YouTube Creator
+  company: 'Channel:  <a href="https://youtube.com/xavecoding" target="_blank" rel="nofollow noopener noreferrer">xavecoding</a> (aimed at Portuguese speakers, over 5.5k subscribers and 320k+ views)'
   date: 08/2016 – present
   assignments:
     - Channel dedicated to courses and tutorials on ML and computer science topics.
-- position: Professor
+- position: Adjunct Professor of Data Science and Computer Science
   company: Federal Institute of Education, Science, and Technology of São Paulo (IFSP) - Campinas-SP (Brazil)
   date: 07/2016 – present
   assignments:

@@ -19,3 +19,10 @@
   points:
     - 'Different techniques for data analysis.'
     - 'Visual analytics methods to understand neural networks.'
+- title: Data Engineering with AWS
+  icon: '<i class="bi bi-cloud-fill"></i>'
+  points:
+    - 'Creation and management of Data Warehouses, Data Lakes, and Lakehouses in AWS'
+    - 'Development of ETL/ELT'
+    - 'PySpark, AWS Redshift, AWS Glue, AWS Athena'
+
