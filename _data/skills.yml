@@ -8,6 +8,9 @@
       icon: '<i class="bi bi-terminal-fill"></i>'
     - name: ITK snap, napari
       icon: '<i class="bi bi-display"></i>'
+    - name: AWS
+      icon: '<i class="bi bi-cloud-fill"></i>'
+
 - type: Packages
   skills:
     - name: Matplotlib, Seaborn, Plotly
@@ -18,6 +21,8 @@
       icon: '<i class="bi bi-share-fill"></i>'
     - name: Scikit-image, OpenCV, nibabel
       icon: '<i class="bi bi-image-fill"></i>'
+    - name: SpaCy, NLTK
+      icon: '<i class="bi bi-card-text"></i>'
 - type: Languages
   skills:
     - name: '<b>English</b> (fluent)'
