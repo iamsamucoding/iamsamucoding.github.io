@@ -3,25 +3,30 @@
 #   date: 11/2022 – present
 #   assignments:
 #     - Developing teaching materials and conducting classes for undergraduate computer courses.
-- position: Coordinator of the Data Science Specialization
-  company: Federal Institute of Education, Science, and Technology of São Paulo (IFSP) - Campinas-SP (Brazil)
-  date: 10/2020 – present
+- position: Senior Data Scientist
+  company: Itaú Unibanco - São Paulo-SP (Brazil)
+  date: 09/2023 – present
   assignments:
-    - Faculty management, project and student supervision, and fundraising.
-    - "Conducting the courses: Statistics, ML, Neural Networks, and NLP."
+    - Developing propensity models and time series anomaly detection methods.
 - position: YouTube Creator
   company: 'Channel:  <a href="https://youtube.com/xavecoding" target="_blank" rel="nofollow noopener noreferrer">xavecoding</a> (aimed at Portuguese speakers)'
   date: 08/2016 – present
   assignments:
-    - '<i>Over 300 videos, 5,000 subscribers, and 320,000 views.</i>'
+    - '<i>Over 300 videos, 6,000 subscribers, and 320,000 views.</i>'
     - Channel dedicated to courses and tutorials on ML and computer science topics.
+- position: Coordinator of the Data Science Specialization
+  company: Federal Institute of Education, Science, and Technology of São Paulo (IFSP) - Campinas-SP (Brazil)
+  date: 10/2020 – 09/2023
+  assignments:
+    - Faculty management, project and student supervision, and fundraising.
+    - "Conducted the courses: Statistics, ML, Neural Networks, and NLP."
 - position: Adjunct Professor
   company: Federal Institute of Education, Science, and Technology of São Paulo (IFSP) - Campinas-SP (Brazil)
-  date: 07/2016 – present
+  date: 07/2016 – 09/2023
   assignments:
-    - Conducting classes and tutorials for undergraduate and graduate students.
-    - Guiding and mentoring graduate and undergraduate students in research projects.
-    - Writing research funding proposals.
+    - Conducted classes and tutorials for undergraduate and graduate students.
+    - Guided and mentored graduate and undergraduate students in research projects.
+    - Wrote research funding proposals.
 - position: Web Developer
   company: Tray E-Commerce Platform, Marília-SP, Brazil
   date: 01/2012 – 12/2012
